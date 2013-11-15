@@ -157,9 +157,10 @@ function showTextResults() {
     $(".huzzah").show();
   }
 
-  var snap = $("#support-snap").prop("checked");
-  var wic = $("#support-wic").prop("checked");
-  var dds = $("#support-dds").prop("checked");
+  var snap = $("#support-snap-ending").prop("checked");
+  var wic = $("#support-wic-ending").prop("checked");
+  var dds = $("#support-dds-ending").prop("checked");
+  var toys = $("#support-toys-ending").prop("checked");
 
   if(wic && !snap) {
     $(".wic-not-snap").show();
@@ -173,8 +174,12 @@ function showTextResults() {
     $(".wic-and-snap").show();
   }
 
-  if(!dds) {
+  if(dds) {
     $(".no-dds").show();
+  }
+
+  if(toys) {
+    $(".no-toys").show();
   }
 
   var rec = $("#community-recreation").prop("checked");
@@ -189,11 +194,15 @@ function showTextResults() {
 
   if(!rec) {
     $('.no-rec-program').show();
+  } else {
+    $('.rec-program').show();
   }
 
   if(!supports && !parents && !groups) {
     $('.no-supports-parents-groups').show();
-  }
+  } else if(supports && parents && groups) {
+    $('.supports-parents-groups').show();
+  } else 
 
   var iep = $("#iep-dont-know").prop("checked");
 
