@@ -1,0 +1,44 @@
+ul { margin: 0; padding: 0; }
+
+hr { margin-bottom: 100%; }
+/* bootstrap 3 helpers */
+
+.navbar-form input, .form-inline input {
+	width:auto;
+}
+
+header {
+	height:270px;
+}
+
+@media (min-width: 979px) {
+  #sidebar.affix-top {
+    position: static;
+  	margin-top:25px;
+  	width:228px;
+  }
+  
+  #sidebar.affix {
+    position: fixed;
+    top:25px;
+    width:228px;
+  }
+}
+
+.affix,.affix-top {
+   position:static;
+}
+
+table { margin-top: 1em; }
+table th { font-size: 1.2em; }
+table td, table th { padding: .5em; }
+table td label, table td input[type="text"] { opacity: .5; }
+
+td[data-total="current"], td[data-total="future"],
+td.current, td.future { font-weight: bold; font-size: 1.5em; }
+
+h2 { padding-top: 1em; }
+
+ul[data-switch] > li { display: none; }
+
+.text-results p { display: none; }

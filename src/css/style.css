@@ -1,0 +1,58 @@
+body { background: #F0F8FA; }
+
+.container { max-width: 900px; background: #fff; }
+
+body > .container, body header > .container { 
+  padding: 30px; padding-top: 15px; 
+  font-size: 16px; line-height: 24px; 
+  border-radius: 6px; box-shadow: 0 0 10px #666; 
+}
+
+body header > .container { width: 700px; margin: 50px auto; }
+
+ul, ol { margin: 0; padding: 0; list-style-type: none; }
+
+li { padding: 15px 0; }
+
+th label { font-weight: normal; color: #444 !important; }
+
+hr { border: 0; margin-bottom: 100%; }
+
+/* bootstrap 3 helpers */
+
+.navbar-form input, .form-inline input {
+	width:auto;
+}
+
+header {
+	height:270px;
+}
+
+@media (min-width: 979px) {
+  #sidebar.affix-top {
+    position: static;
+  	margin-top:25px;
+  }
+  
+  #sidebar.affix {
+    position: fixed;
+    top:25px;
+    width: 180px;
+  }
+}
+
+.affix,.affix-top {
+   position:static;
+}
+
+table { margin-top: 1em; }
+table td, table th { padding: .5em; }
+table td input[type="radio"], table td input[type="checkbox"] { margin: 4px; }
+td[data-total="current"], td[data-total="future"],
+td.current, td.future { font-size: 1.5em; }
+
+h2 { padding-top: 1em; }
+
+ul[data-switch] > li { display: none; }
+
+.text-results p { display: none; }
