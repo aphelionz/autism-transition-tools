@@ -38,21 +38,11 @@ $(document).ready(function() {
 
     $("[for]").each(function() {
       var id = $(this).attr("for");
-
-      $("#" + id).on("change", function(e,f,b) {
-        if($(this).prop("checked")) {
-          $('[for="'+id+'"]').css("opacity", 1);
-        } else {
-          $('[for="'+id+'"]').css("opacity", 0.5);
-        }
-      });
     });
 
     $("[data-switch]").each(function() {
       var ul = $(this);
       var id = ul.data("switch");
-
-      console.log(id);
 
       $('[name="'+id+'"]').click(function(e) {
         var val = $(this).val();
@@ -76,7 +66,7 @@ $(document).ready(function() {
           addends.forEach(function(addend) {
             var value = $("#" + addend).prop("disabled") ?
             0 : $("#" + addend).val();
-            sum += parseInt(value, 10);
+            sum += parseFloat(value);
             $(sum_el).html(sum.toString());
           });
 
@@ -107,8 +97,8 @@ $(document).ready(function() {
 
 function getTotals() {
   $("[data-hour-total]").each(function() {
-    var afterei = parseInt($(this).siblings("td[data-sum^='afterei']").html(),10);
-    var iep = parseInt($(this).siblings("td[data-sum^='school']").html(),10);
+    var afterei = parseFloat($(this).siblings("td[data-sum^='afterei']").html());
+    var iep = parseFloat($(this).siblings("td[data-sum^='school']").html());
 
     if(isNaN(afterei)) afterei = 0;
     if(isNaN(iep)) iep = 0;
@@ -122,19 +112,19 @@ function getTotals() {
     var sum = 0;
 
     $("." + className).not(".ignore").each(function() {
-      var value = parseInt($(this).html(), 10);
+      var value = parseFloat($(this).html());
 
       if(!isNaN(value)) {
-        sum += parseInt(value, 10);        
+        sum += parseFloat(value);
       }
     });
 
     $(el).html(sum);
   });
 
-  var current_total = parseInt($('[data-total="current"]').html(),10);
-  var future_total = parseInt($('[data-total="future"]').html(),10);
-  var iep_total = parseInt($('[data-total="iep"]').html(),10);
+  var current_total = parseFloat($('[data-total="current"]').html());
+  var future_total = parseFloat($('[data-total="future"]').html());
+  var iep_total = parseFloat($('[data-total="iep"]').html());
 
   showTextResults(current_total, future_total, iep_total);
 }

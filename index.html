@@ -28,7 +28,7 @@
 
     <body>
 
-      <header class="masthead">
+      <header class="masthead non-printable">
         <div class="container">
           <h1>
             <a href="#" title="scroll down for your viewing pleasure">
@@ -56,7 +56,7 @@
             <div class="col-md-3">
 
               <!-- TODO: Highlight the current step in the left nav -->
-              <div class="list-group" id="sidebar">
+              <div class="list-group non-printable" id="sidebar">
                 <a href="#intro" class="list-group-item">Introduction</a>
                 <a href="#p1" class="list-group-item">Early Intervention</a>
                 <a href="#p2" class="list-group-item">Additional Private Supports</a>
@@ -69,6 +69,7 @@
               
             </div>  
             <div class="col-md-9">
+              <div class="non-printable">
               <h2 id="intro">Welcome to the Autism Transition Tool</h2>
               <p>As our children grow and age, there will be many transitions. Ending Early Intervention (EI) services is the first of many of these types of changes that we, as parents and guardians, must weather.</p>
               <p>The purpose of this tool is to empower you in building a greater vision of the services, supports, and community-based programs that will help sustain your family as you all grow and age.</p>
@@ -92,7 +93,7 @@
                         <label for="ei-speech-therapy">Speech Therapy</label>
                       </td>
                       <td>
-                        <input type="number" min="0" value="0" data-activate="ei-speech-therapy" name="ei-speech-therapy-hours" id="ei-speech-therapy-hours" disabled />
+                        <input type="number" min="0" step="0.5" max="7" value="0" data-activate="ei-speech-therapy" name="ei-speech-therapy-hours" id="ei-speech-therapy-hours" disabled />
                       </td>
                     </tr>
                     <tr>
@@ -101,7 +102,7 @@
                         <label for="ei-aba">Applied Behavioral Analysis (ABA)</label>
                       </td>
                       <td>
-                        <input type="number" min="0" value="0" data-activate="ei-aba" name="ei-aba-hours" id="ei-aba-hours" disabled />
+                        <input type="number" min="0" step="0.5" max="40" value="0" data-activate="ei-aba" name="ei-aba-hours" id="ei-aba-hours" disabled />
                       </td>
                     </tr>
                     <tr>
@@ -110,7 +111,7 @@
                         <label for="ei-ot">Occupational Therapy (OT)</label>
                       </td>
                       <td>
-                        <input type="number" min="0" value="0" data-activate="ei-ot" name="ei-ot-hours" id="ei-ot-hours" disabled />
+                        <input type="number" min="0" step="0.5" max="7" value="0" data-activate="ei-ot" name="ei-ot-hours" id="ei-ot-hours" disabled />
                       </td>
                     </tr>
                     <tr>
@@ -119,7 +120,7 @@
                         <label for="ei-pt">Physical Therapy (PT)</label>
                       </td>
                       <td>
-                        <input type="number" min="0" value="0" data-activate="ei-pt" name="ei-pt-hours" id="ei-pt-hours" disabled />
+                        <input type="number" min="0" step="0.5" max="7" value="0" data-activate="ei-pt" name="ei-pt-hours" id="ei-pt-hours" disabled />
                       </td>
                     </tr>
                     <tr>
@@ -128,7 +129,7 @@
                         <label for="ei-music">Music Therapy</label>
                       </td>
                       <td>
-                        <input type="number" min="0" value="0" data-activate="ei-music" name="ei-music-hours" id="ei-music-hours" disabled />
+                        <input type="number" min="0" step="0.5" max="7" value="0" data-activate="ei-music" name="ei-music-hours" id="ei-music-hours" disabled />
                       </td>
                     </tr>
                     <tr>
@@ -137,7 +138,7 @@
                         <label for="ei-social">Social Skills Group or Play Group</label>
                       </td>
                       <td>
-                        <input type="number" min="0" value="0" data-activate="ei-social" name="ei-social-hours" id="ei-social-hours" disabled />
+                        <input type="number" min="0" step="0.5" max="7" value="0" data-activate="ei-social" name="ei-social-hours" id="ei-social-hours" disabled />
                       </td>
                     </tr>
                     <tr>
@@ -146,7 +147,7 @@
                         <label for="ei-social-worker">Social Worker</label>
                       </td>
                       <td>
-                        <input type="number" min="0" value="0" data-activate="ei-social-worker" name="ei-social-worker-hours" id="ei-social-worker-hours" disabled />
+                        <input type="number" min="0" step="0.5" max="7" value="0" data-activate="ei-social-worker" name="ei-social-worker-hours" id="ei-social-worker-hours" disabled />
                       </td>
                     </tr>
                     <tr>
@@ -155,7 +156,7 @@
                         <label for="ei-case-manager">Service Coordinator</label>
                       </td>
                       <td>
-                        <input type="number" min="0" value="0" data-activate="ei-case-manager" name="ei-case-manager-hours" id="ei-case-manager-hours" disabled />
+                        <input type="number" min="0" step="0.5" max="7" value="0" data-activate="ei-case-manager" name="ei-case-manager-hours" id="ei-case-manager-hours" disabled />
                       </td>
                     </tr>
                     <tr>
@@ -164,7 +165,7 @@
                         <label for="ei-support-group">Support Group</label>
                       </td>
                       <td>
-                        <input type="number" min="0" value="0" data-activate="ei-support-group" name="ei-support-group-hours" id="ei-support-group-hours" disabled />
+                        <input type="number" min="0" step="0.5" max="7" value="0" data-activate="ei-support-group" name="ei-support-group-hours" id="ei-support-group-hours" disabled />
                       </td>
                     </tr>
                     <tr>
@@ -173,7 +174,7 @@
                         <label for="ei-other">Other</label>
                       </td>
                       <td>
-                        <input type="number" min="0" value="0" data-activate="ei-other" name="ei-other-hours" id="ei-other-hours" disabled />
+                        <input type="number" min="0" step="0.5" max="7" value="0" data-activate="ei-other" name="ei-other-hours" id="ei-other-hours" disabled />
                       </td>
                     </tr>
                   </table>
@@ -422,7 +423,7 @@
                             <label for="afterei-therapist">Therapist</label>
                           </td>
                           <td>
-                            <input type="number" min="0" value="0" data-actiate="afterei-therapist" name="afterei-therapist-hours" id="afterei-therapist-hours" disabled />
+                            <input type="number" min="0" value="0" data-activate="afterei-therapist" name="afterei-therapist-hours" id="afterei-therapist-hours" disabled />
                           </td>
                         </tr>
                         <tr>
@@ -752,9 +753,11 @@
 
               <a href="#results" class="proceed btn btn-large btn-info">See Your Results &raquo;</a>
               <hr />
+              </p></li></ol></ul></li></ol></div>
 
+              <div class="printable">
               <h2 id="results">Results</h2>
-                <a onclick="javascript:window.print();return false;" href="#">Print</a>
+                <a class="non-printable" onclick="javascript:window.print();return false;" href="#">Print</a>
                 <!-- <a onclick="javascript:function copyToClipboard (text) {
   window.prompt ('Copy to clipboard: Ctrl+C, Enter', text);
 };copyToClipboard(window.location);return false;" href="#">Copy link to results</a> -->
@@ -957,9 +960,9 @@
                   </li>
                   </ol>
 
-              <h4><a target="_blank" href="https://docs.google.com/forms/d/18yXDh7EMMRo7viiS9lumR0JJtaUUisUScPIm6IZ5fn8/viewform">Testers please proceed here.</a></h4>
+              <h4 class="non-printable"><a target="_blank" href="https://docs.google.com/forms/d/18yXDh7EMMRo7viiS9lumR0JJtaUUisUScPIm6IZ5fn8/viewform">Testers please proceed here.</a></h4>
               <hr class="col-md-12">
-
+              </p></li></ul></div>
 
                         </div> 
                       </div>

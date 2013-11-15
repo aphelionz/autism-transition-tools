@@ -14,7 +14,7 @@ ul, ol { margin: 0; padding: 0; list-style-type: none; }
 
 li { padding: 15px 0; }
 
-th label { font-weight: normal; color: #444 !important; }
+th label { font-weight: normal; }
 
 hr { border: 0; margin-bottom: 100%; }
 
@@ -56,3 +56,11 @@ h2 { padding-top: 1em; }
 ul[data-switch] > li { display: none; }
 
 .text-results > p { display: none; }
+
+@media print 
+{
+  .non-printable { display: none; }
+  .printable { display: block; }
+
+  .printable h2 { margin: 0; padding: 0; }
+}
