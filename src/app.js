@@ -3,6 +3,13 @@ $(document).ready(function() {
       getTotals();
     });
 
+    $("#ei-aba-hours").change(function(e) {
+      if($(this).val() > 0) {
+        $(".no-aba-hours").hide();
+        $(".aba-hours-entered").show();
+      }
+    });
+
     $('.proceed').click(function(e) {
       var id = $(this).attr("href");
 
@@ -204,9 +211,19 @@ function showTextResults() {
     $('.supports-parents-groups').show();
   } else 
 
-  var iep = $("#iep-dont-know").prop("checked");
+  var iep_dont_know = $("#iep-dont-know").prop("checked");
+  console.log("why " + iep_dont_know);
 
-  if(iep) {
+  if(iep_dont_know) {
     $(".iep-dont-know").show();
+  }
+
+  var aba_hours_currently = parseFloat($(".current.aba").html());
+  var aba_hours_future = parseFloat($(".future.aba").html());
+
+  if(aba_hours_future === 0) {
+    $(".no-future-aba").show();
+  } else if(aba_hours_currently > aba_hours_future) {
+    $(".less-aba").show();
   }
 }

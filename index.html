@@ -32,7 +32,8 @@
         <div class="container">
           <h1>
             <a href="#" title="scroll down for your viewing pleasure">
-            <em>Welcome!</em></a>
+              <em>Welcome!</em>
+            </a>
             <small class="lead">Thank you for testing this tool!</small>
           </h1>
 
@@ -48,13 +49,13 @@
               <p><a class="proceed btn btn-large btn-info" href="#intro">Proceed to testing the survey.</a></p>
             </div>
           </div>
-        </header>         
+        </div>
+      </header><!-- /header -->
 
         <!-- Begin Body -->
         <div class="container">
           <div class="row">
-            <div class="col-md-3">
-
+            <div class="col-md-3 sidebar">
               <!-- TODO: Highlight the current step in the left nav -->
               <div class="list-group non-printable" id="sidebar">
                 <a href="#intro" class="list-group-item">Introduction</a>
@@ -66,499 +67,516 @@
                 <a href="#p6" class="list-group-item">Community Supports</a>
                 <a href="#results" class="list-group-item">Results</a>
               </div>
-              
-            </div>  
+            </div><!-- /sidebar -->
+
             <div class="col-md-9">
-              <div class="non-printable">
-              <h2 id="intro">Welcome to the Autism Transition Tool</h2>
-              <p>As our children grow and age, there will be many transitions. Ending Early Intervention (EI) services is the first of many of these types of changes that we, as parents and guardians, must weather.</p>
-              <p>The purpose of this tool is to empower you in building a greater vision of the services, supports, and community-based programs that will help sustain your family as you all grow and age.</p>
-          
-              <p>The following questions are designed to help you assess what services you are receiving in EI and what services you are looking forward to once your child ages out of EI. Once you have completed all the questions, you will be directed to a final page that includes your answers and resources that may be helpful.</p>
+              <section class="non-printable" id="intro">
+                <h2>Welcome to the Autism Transition Tool</h2>
+                <p>As our children grow and age, there will be many transitions. Ending Early Intervention (EI) services is the first of many of these types of changes that we, as parents and guardians, must weather.</p>
+                <p>The purpose of this tool is to empower you in building a greater vision of the services, supports, and community-based programs that will help sustain your family as you all grow and age.</p>
+                <p>The following questions are designed to help you assess what services you are receiving in EI and what services you are looking forward to once your child ages out of EI. Once you have completed all the questions, you will be directed to a final page that includes your answers and resources that may be helpful.</p>
+
+                <a href="#p1"  class="proceed btn btn-large btn-info">Proceed &raquo;</a>
+              </section>
               
-              <a href="#p1"  class="proceed btn btn-large btn-info">Proceed &raquo;</a>
-                            <hr />
-              
-              <h2 id="p1">Early Intervention</h2>
-              <ol>
-                <li><em>Please use the table to indicate which services and supports you are receiving in EI, as well as the number of hours each week.</em>
-                  <table>
-                    <tr>
-                      <th>Support/Service</th>
-                      <th>Hours per Week</th>
-                    </tr>
-                    <tr>
-                      <td>
-                        <input type="checkbox" id="ei-speech-therapy">
-                        <label for="ei-speech-therapy">Speech Therapy</label>
-                      </td>
-                      <td>
-                        <input type="number" min="0" step="0.5" max="7" value="0" data-activate="ei-speech-therapy" name="ei-speech-therapy-hours" id="ei-speech-therapy-hours" disabled />
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <input type="checkbox" id="ei-aba">
-                        <label for="ei-aba">Applied Behavioral Analysis (ABA)</label>
-                      </td>
-                      <td>
-                        <input type="number" min="0" step="0.5" max="40" value="0" data-activate="ei-aba" name="ei-aba-hours" id="ei-aba-hours" disabled />
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <input type="checkbox" id="ei-ot">
-                        <label for="ei-ot">Occupational Therapy (OT)</label>
-                      </td>
-                      <td>
-                        <input type="number" min="0" step="0.5" max="7" value="0" data-activate="ei-ot" name="ei-ot-hours" id="ei-ot-hours" disabled />
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <input type="checkbox" id="ei-pt">
-                        <label for="ei-pt">Physical Therapy (PT)</label>
-                      </td>
-                      <td>
-                        <input type="number" min="0" step="0.5" max="7" value="0" data-activate="ei-pt" name="ei-pt-hours" id="ei-pt-hours" disabled />
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <input type="checkbox" id="ei-music">
-                        <label for="ei-music">Music Therapy</label>
-                      </td>
-                      <td>
-                        <input type="number" min="0" step="0.5" max="7" value="0" data-activate="ei-music" name="ei-music-hours" id="ei-music-hours" disabled />
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <input type="checkbox" id="ei-social">
-                        <label for="ei-social">Social Skills Group or Play Group</label>
-                      </td>
-                      <td>
-                        <input type="number" min="0" step="0.5" max="7" value="0" data-activate="ei-social" name="ei-social-hours" id="ei-social-hours" disabled />
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <input type="checkbox" id="ei-social-worker">
-                        <label for="ei-social-worker">Social Worker</label>
-                      </td>
-                      <td>
-                        <input type="number" min="0" step="0.5" max="7" value="0" data-activate="ei-social-worker" name="ei-social-worker-hours" id="ei-social-worker-hours" disabled />
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <input type="checkbox" id="ei-case-manager">
-                        <label for="ei-case-manager">Service Coordinator</label>
-                      </td>
-                      <td>
-                        <input type="number" min="0" step="0.5" max="7" value="0" data-activate="ei-case-manager" name="ei-case-manager-hours" id="ei-case-manager-hours" disabled />
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <input type="checkbox" id="ei-support-group">
-                        <label for="ei-support-group">Support Group</label>
-                      </td>
-                      <td>
-                        <input type="number" min="0" step="0.5" max="7" value="0" data-activate="ei-support-group" name="ei-support-group-hours" id="ei-support-group-hours" disabled />
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <input type="checkbox" id="ei-other">
-                        <label for="ei-other">Other</label>
-                      </td>
-                      <td>
-                        <input type="number" min="0" step="0.5" max="7" value="0" data-activate="ei-other" name="ei-other-hours" id="ei-other-hours" disabled />
-                      </td>
-                    </tr>
-                  </table>
-                </li>
+              <section class="non-printable" id="p1">
+                <h2>Early Intervention</h2>
+                <ol>
+                  <li>
+                    <em>Please use the table to indicate which services and supports you are receiving in EI, as well as the number of hours each week.</em>
+                    <table>
+                      <tr>
+                        <th>Support/Service</th>
+                        <th>Hours per Week</th>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="checkbox" id="ei-speech-therapy">
+                          <label for="ei-speech-therapy">Speech Therapy</label>
+                        </td>
+                        <td>
+                          <input type="number" min="0" step="0.5" max="7" value="0" data-activate="ei-speech-therapy" name="ei-speech-therapy-hours" id="ei-speech-therapy-hours" disabled />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="checkbox" id="ei-aba">
+                          <label for="ei-aba">Applied Behavioral Analysis (ABA)</label>
+                        </td>
+                        <td>
+                          <input type="number" min="0" step="0.5" max="40" value="0" data-activate="ei-aba" name="ei-aba-hours" id="ei-aba-hours" disabled />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="checkbox" id="ei-ot">
+                          <label for="ei-ot">Occupational Therapy (OT)</label>
+                        </td>
+                        <td>
+                          <input type="number" min="0" step="0.5" max="7" value="0" data-activate="ei-ot" name="ei-ot-hours" id="ei-ot-hours" disabled />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="checkbox" id="ei-pt">
+                          <label for="ei-pt">Physical Therapy (PT)</label>
+                        </td>
+                        <td>
+                          <input type="number" min="0" step="0.5" max="7" value="0" data-activate="ei-pt" name="ei-pt-hours" id="ei-pt-hours" disabled />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="checkbox" id="ei-music">
+                          <label for="ei-music">Music Therapy</label>
+                        </td>
+                        <td>
+                          <input type="number" min="0" step="0.5" max="7" value="0" data-activate="ei-music" name="ei-music-hours" id="ei-music-hours" disabled />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="checkbox" id="ei-social">
+                          <label for="ei-social">Social Skills Group or Play Group</label>
+                        </td>
+                        <td>
+                          <input type="number" min="0" step="0.5" max="7" value="0" data-activate="ei-social" name="ei-social-hours" id="ei-social-hours" disabled />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="checkbox" id="ei-social-worker">
+                          <label for="ei-social-worker">Social Worker</label>
+                        </td>
+                        <td>
+                          <input type="number" min="0" step="0.5" max="7" value="0" data-activate="ei-social-worker" name="ei-social-worker-hours" id="ei-social-worker-hours" disabled />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="checkbox" id="ei-case-manager">
+                          <label for="ei-case-manager">Service Coordinator</label>
+                        </td>
+                        <td>
+                          <input type="number" min="0" step="0.5" max="7" value="0" data-activate="ei-case-manager" name="ei-case-manager-hours" id="ei-case-manager-hours" disabled />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="checkbox" id="ei-support-group">
+                          <label for="ei-support-group">Support Group</label>
+                        </td>
+                        <td>
+                          <input type="number" min="0" step="0.5" max="7" value="0" data-activate="ei-support-group" name="ei-support-group-hours" id="ei-support-group-hours" disabled />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="checkbox" id="ei-other">
+                          <label for="ei-other">Other</label>
+                        </td>
+                        <td>
+                          <input type="number" min="0" step="0.5" max="7" value="0" data-activate="ei-other" name="ei-other-hours" id="ei-other-hours" disabled />
+                        </td>
+                      </tr>
+                    </table>
+                  </li>
 
-                <li>Are you satisfied with the amount and quality of your EI services?
-                  <input type="radio" name="satisfied-with-ei" value="yes" />Yes
-                  <input type="radio" name="satisfied-with-ei" value="no">No
+                  <li><em>Are you satisfied with the amount and quality of your EI services?</em>
+                    <input type="radio" name="satisfied-with-ei" value="yes" />Yes
+                    <input type="radio" name="satisfied-with-ei" value="no">No
+
+                    <ul data-switch="satisfied-with-ei">
+                      <li class="yes">That’s wonderful! It might be helpful going forward if you work with your service coordinator to identify what about the amount and quality of services is satisfying for you. This will help you appraise providers in the future.</li>
+                      <li class="no">
+                        <ul>
+                          <li>Which is dissatisfying to you?
+                            <ul>
+                              <li><input type="radio" name="dissatisfying" value="amount"/>The amount of my child's services.</li>
+                              <li><input type="radio" name="dissatisfying" value="quality"/>The quality of my child's services.</li>
+                              <li><input type="radio" name="dissatisfying" value="both"/>Both are dissatisfying.</li>
+                            </ul>
+                            <ul data-switch="dissatisfying">
+                              <li class="amount quality both">Have you used your health insurance benefits to secure therapies or services through a provider outside of the Early Intervention system?
+                                <input type="radio" name="dissatisfying-insurance" value="yes"/>Yes.
+                                <input type="radio" name="dissatisfying-insurance" value="no"/>No.
+                                <ul data-switch="dissatisfying-insurance">
+                                  <li class="yes"><p>If you've spoken with your service coordinator about your dissatisfaction with the services that your child is receiving and have also spoken with your service coordinator's supervisor, then it's likely that you have exhausted your options for your EI services. If you have identified and began to work with providers outside the EI system that you are satisfied with, then you are well on your way to building an effective team for your child once they have aged out of EI.</p>
+                                  </li>
+                                  <li class="no"><p>If you've spoken with your service coordinator about your dissatisfaction with your child's services, and have also spoken with your service coordionator's supervisor, then you might want to explore options to work with providers outside of the Early Intervention system. Identifying providers that accept your health insurance is among the first steps to building an effective care team that will help you sustain your child's outcomes once you transition out of Early Intervention.</p></li>  
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="no-aba-hours">
+                    <em>It appears that your child is not currently receiving ABA services. Do you plan on receiving ABA before you transition out of Early Intervention?</em>
+
+                    <input type="radio" name="aba-services-afterei" value="yes" />Yes
+                    <input type="radio" name="aba-services-afterei" value="no">No
+
+                    <ul data-switch="aba-services-afterei">
+                      <li class="yes">
+                        <p>Please edit the table above to reflect the number of hours of ABA that your child will receive.</p>
+                        <p>If you do not anticipate that your child will begin ABA more than six months before their third birthday, please leave the table blank and proceed as though you are not receiving ABA in Early Intervention by changing your answer to “no.”</p>
+
+                        <em>Does your health insurance cover ABA?</em>
+
+                        <input type="radio" name="health-insurance-covers-aba" value="yes" />Yes
+                        <input type="radio" name="health-insurance-covers-aba" value="no">No
+                        <input type="radio" name="health-insurance-covers-aba" value="notsure">Not Sure
+
+                        <ul data-switch="health-insurance-covers-aba">
+                          <li class="yes">
+                            <p>It’s important to decide as soon as possible which ABA provider you would like to work with. You can discuss potential providers with your service coordinator or the specialist who focuses most on your child’s behavioral development (for some families this is a developmental pediatrician, while for others this might be a neurologist). Once you have identified potential providers, it is important to confirm that they will accept your health insurance and begin the process of securing services for your child. Some ABA providers have long wait times.</p>
+                          </li>
+                          <li class="no">
+                            <p>If your health insurance does not cover ABA, there may be some options available to you. You can learn more about these options by contacting the Autism Insurance Resource Center at (781) 642-0248 or (800) 642-0249. You can explore their website <a href=”https://www.disabilityinfo.org/arica/”>here</a>.</p>
+                          </li>
+                          <li class="notsure">
+                            <p>To determine whether or not your health insurance covers ABA, you can contact the Autism Insurance Resource Center. If your health insurance does not cover ABA, there might be other options available. You can reach the Autism Insurance Resource Center at (781) 642-0248 or (800) 642-0249. You can explore their website <a href=”https://www.disabilityinfo.org/arica/”>here</a>.</p>
+                            <!-- This is where the insurance survey would go. -->
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  
+                  <li class="aba-hours-entered">
+                    <em>Will your ABA services continue once you transition out of EI? If you are unsure, select “no.”</em>
+                    
+                    <input type="radio" name="aba-services-continuing" value="yes" />Yes
+                    <input type="radio" name="aba-services-continuing" value="no">No
 
 
-                  <ul data-switch="satisfied-with-ei">
-                    <li class="yes">That’s wonderful! It might be helpful going forward if you work with your service coordinator to identify what about the amount and quality of services is satisfying for you. This will help you appraise providers in the future.</li>
-                    <li class="no">
-                      <ul>
-                        <li>Which is dissatisfying to you?
-                          <ul>
+                    <ul data-switch="aba-services-continuing">
+                      <li class="yes">
+                        <p>If your ABA services are scheduled to continue once your child ages out of 
+                          EI, then you are a hundred steps ahead of the game! You might want to discuss how 
+                          ABA might change with your service coordinator and the ABA clinician overseeing your child’s case.
+                        </p>
+                      </li>
+                      <li class="no">
+                        <em>Are you interested in continuing with ABA services after EI?</em>
 
-                          <li><input type="radio" name="dissatisfying" value="amount"/>The amount of my child's services.</li>
-                          <li><input type="radio" name="dissatisfying" value="quality"/>The quality of my child's services.</li>
-                          <li><input type="radio" name="dissatisfying" value="both"/>Both are dissatisfying.</li>
-                          </ul>
-						  <ul data-switch="dissatisfying">
-						  <li class="amount quality both">Have you used your health insurance benefits to secure therapies or services through a provider outside of the Early Intervention system?
-						  <input type="radio" name="dissatisfying-insurance" value="yes"/>Yes.
-						  <input type="radio" name="dissatisfying-insurance" value="no"/>No.</li>
-						  <ul data-switch="dissatisfying-insurance">
-						  <li class="yes"><p>If you've spoken with your service coordinator about your dissatisfaction with the services that your child is receiving and have also spoken with your service coordinator's supervisor, then it's likely that you have exhausted your options for your EI services. If you have identified and began to work with providers outside the EI system that you are satisfied with, then you are well on your way to building an effective team for your child once they have aged out of EI.</p>
-						  </li>
-						  <li class="no"><p>If you've spoken with your service coordinator about your dissatisfaction with your child's services, and have also spoken with your service coordionator's supervisor, then you might want to explore options to work with providers outside of the Early Intervention system. Identifying providers that accept your health insurance is among the first steps to building an effective care team that will help you sustain your child's outcomes once you transition out of Early Intervention.</p></li>  
-						  </ul>
-                        </li>
-                       
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-
-
-                <li>Do you currently receive ABA? / Will you receive ABA in the future? 
-				<!-- UGH. I need to review this section more...
-				If person is receiving ABA, as indicated in the table, then this question isn't necessary.
-				If ABA isn't indicated in the table, then the question should be, "Will your child receive ABA in the future?" -->
-                  <input type="radio" name="receiving-aba" value="yes" />Yes
-                  <input type="radio" name="receiving-aba" value="no" />No
-				  <!-- I'll need to decide what I want to do here. If the person answers, "no," should I advise them to consider ABA?-->
-
-                  <ul data-switch="receiving-aba">
-                    <li class="yes">Do you want to continue in-home ABA services continue after your transition out of Early Intervention?
-                      <input type="radio" name="aba-inhome" value="yes" />Yes
-                      <input type="radio" name="aba-inhome" value="no" />No
-                      <input type="radio" name="aba-inhome" value="notsure" />Not Sure
-
-                      <ul data-switch="aba-inhome">
-                        <li class="yes">Very cool!</li>
-                        <li class="no notsure">
-                          <ol>
-                            <li>Does your health insurance cover ABA?
-                              <input type="radio" name="aba-health-insurance" value="yes" />Yes
-                              <input type="radio" name="aba-health-insurance" value="no" />No
-                              <input type="radio" name="aba-health-insurance" value="notsure" />Not Sure
-                              <ul data-switch="aba-health-insurance">
-                                <li class="yes">“follow up with your health insurance provider” </li>
-                                <li class="no notsure">Typically, ABA will discontinue when EI services end. You can find out 
-                                from your health insurance provider whether or not they cover ABA. If they do not cover ABA or 
-                                if you would like more information about communicating with your health insurance provider
-                                about whether or not they cover ABA services, you can contact the Autism Insurance Resource
-                                Center at xxx-xxx-xxxx.</li>
-                              </ul>
-                            </li>
-                          </ol>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
+                        <input type="radio" name="interested-continuing-aba" value="yes" />Yes
+                        <input type="radio" name="interested-continuing-aba" value="no">No
+                      </li>
+                    </ul>
                   </li>
                 </ol>
 
-              <a href="https://docs.google.com/forms/d/1iY-E5yIKwSSJPofKdJ2DrzAiC1U8bHJhxnNpqYe29wU/viewform">Want to say something about this section? Provide feedback here.</a><br />
-              <a href="#p2" class="proceed btn btn-large btn-info">Continue &raquo;</a>
-                            <hr />
+                <a href="https://docs.google.com/forms/d/1iY-E5yIKwSSJPofKdJ2DrzAiC1U8bHJhxnNpqYe29wU/viewform">Want to say something about this section? Provide feedback here.</a><br />
+                <a href="#p2" class="proceed btn btn-large btn-info">Continue &raquo;</a>
+              </section>
 
+              <section class="non-printable"  id="p2">
                 <h2 id="p2">Additional Services and Supports</h2>
                 
                 <ol>
                   <li>
                     <!-- <p>(Outside of EI and not including any services that may be included in your child’s IEP) Please fill out the following chart for the services your child currently receives and what (s)he will receive after EI ends. If your child receives a service on a biweekly basis you can enter .5 for hours per week, or .25 if you are seen once a month. Leave blank if you do not receive this service.
-                      (add in community stuff - community rec, parent to parent/support group)</p> -->
+                    (add in community stuff - community rec, parent to parent/support group)</p> -->
                     <em>What additional supports and services are you receiving privately?</em>
-                      <table>
-                        <tr>
-                          <th>Support/Service</th>
-                          <th>Hours per Week</th>
-                        </tr>
-                        <tr>
-                          <td>
-                            <input type="checkbox" id="additional-speech-therapy">
-                            <label for="additional-speech-therapy">Speech therapy</label>
-                          </td>
-                          <td>
-                            <input type="number" min="0" value="0" data-activate="additional-speech-therapy" name="additional-speech-therapy-hours" id="additional-speech-therapy-hours" disabled />
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <input type="checkbox" id="additional-family">
-                            <label for="additional-family">Family Therapist</label>
-                          </td>
-                          <td>
-                            <input type="number" min="0" value="0" data-activate="additional-family" name="additional-family-hours" id="additional-family-hours" disabled />
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <input type="checkbox" id="additional-ot">
-                            <label for="additional-ot">Occupational Therapy (OT)</label>
-                          </td>
-                          <td>
-                            <input type="number" min="0" value="0" data-activate="additional-ot" name="additional-ot-hours" id="additional-ot-hours" disabled />
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <input type="checkbox" id="additional-pt">
-                            <label for="additional-pt">Physical Therapy (PT)</label>
-                          </td>
-                          <td>
-                            <input type="number" min="0" value="0" data-activate="additional-pt" name="additional-pt-hours" id="additional-pt-hours" disabled />
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <input type="checkbox" id="additional-social">
-                            <label for="additional-social">Social Skills Group or Play Group</label>
-                          </td>
-                          <td>
-                            <input type="number" min="0" value="0" data-activate="additional-social" name="additional-social-hours" id="additional-social-hours" disabled />
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <input type="checkbox" id="additional-therapist">
-                            <label for="additional-therapist">Therapist</label>
-                          </td>
-                          <td>
-                            <input type="number" min="0" value="0" data-activate="additional-therapist" name="additional-therapist-hours" id="additional-therapist-hours" disabled />
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <input type="checkbox" id="additional-case-worker">
-                            <label for="additional-case-worker">Case Worker</label>
-                          </td>
-                          <td>
-                            <input type="number" min="0" value="0" data-activate="additional-case-worker" name="ei-case-worker-hours" id="ei-case-worker-hours" disabled />
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <input type="checkbox" id="additional-educational-advocate">
-                            <label for="additional-educational-advocate">Educatonal Advocate</label>
-                          </td>
-                          <td>
-                            <input type="number" min="0" value="0" data-activate="additional-educational-advocate" name="additional-educational-advocate" id="additional-educational-advocate" disabled />
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <input type="checkbox" id="additional-care-coordinator">
-                            <label for="additional-care-coordinator">Care Coordinator</label>
-                          </td>
-                          <td>
-                            <input type="number" min="0" value="0" data-activate="additional-care-coordinator" name="additional-care-coordinator-hours" id="additional-care-coordinator-hours" disabled />
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <input type="checkbox" id="additional-other">
-                            <label for="additional-other">Other</label>
-                          </td>
-                          <td>
-                            <input type="number" min="0" value="0" data-activate="additional-other" name="additional-other-hours" id="additional-other-hours" disabled />
-                          </td>
-                        </tr>
-                      </table>
-                    </li>
+                    <table>
+                      <tr>
+                        <th>Support/Service</th>
+                        <th>Hours per Week</th>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="checkbox" id="additional-speech-therapy">
+                          <label for="additional-speech-therapy">Speech therapy</label>
+                        </td>
+                        <td>
+                          <input type="number" min="0" value="0" data-activate="additional-speech-therapy" name="additional-speech-therapy-hours" id="additional-speech-therapy-hours" disabled />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="checkbox" id="additional-family">
+                          <label for="additional-family">Family Therapist</label>
+                        </td>
+                        <td>
+                          <input type="number" min="0" value="0" data-activate="additional-family" name="additional-family-hours" id="additional-family-hours" disabled />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="checkbox" id="additional-ot">
+                          <label for="additional-ot">Occupational Therapy (OT)</label>
+                        </td>
+                        <td>
+                          <input type="number" min="0" value="0" data-activate="additional-ot" name="additional-ot-hours" id="additional-ot-hours" disabled />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="checkbox" id="additional-pt">
+                          <label for="additional-pt">Physical Therapy (PT)</label>
+                        </td>
+                        <td>
+                          <input type="number" min="0" value="0" data-activate="additional-pt" name="additional-pt-hours" id="additional-pt-hours" disabled />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="checkbox" id="additional-social">
+                          <label for="additional-social">Social Skills Group or Play Group</label>
+                        </td>
+                        <td>
+                          <input type="number" min="0" value="0" data-activate="additional-social" name="additional-social-hours" id="additional-social-hours" disabled />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="checkbox" id="additional-therapist">
+                          <label for="additional-therapist">Therapist</label>
+                        </td>
+                        <td>
+                          <input type="number" min="0" value="0" data-activate="additional-therapist" name="additional-therapist-hours" id="additional-therapist-hours" disabled />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="checkbox" id="additional-case-worker">
+                          <label for="additional-case-worker">Case Worker</label>
+                        </td>
+                        <td>
+                          <input type="number" min="0" value="0" data-activate="additional-case-worker" name="ei-case-worker-hours" id="ei-case-worker-hours" disabled />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="checkbox" id="additional-educational-advocate">
+                          <label for="additional-educational-advocate">Educatonal Advocate</label>
+                        </td>
+                        <td>
+                          <input type="number" min="0" value="0" data-activate="additional-educational-advocate" name="additional-educational-advocate" id="additional-educational-advocate" disabled />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="checkbox" id="additional-care-coordinator">
+                          <label for="additional-care-coordinator">Care Coordinator</label>
+                        </td>
+                        <td>
+                          <input type="number" min="0" value="0" data-activate="additional-care-coordinator" name="additional-care-coordinator-hours" id="additional-care-coordinator-hours" disabled />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="checkbox" id="additional-other">
+                          <label for="additional-other">Other</label>
+                        </td>
+                        <td>
+                          <input type="number" min="0" value="0" data-activate="additional-other" name="additional-other-hours" id="additional-other-hours" disabled />
+                        </td>
+                      </tr>
+                    </table>
+                  </li>
 
-                    <li>Will any of these change after Early Intervention ends?
-                      <input type="radio" name="change-after-ei" value="yes" />Yes
-                      <input type="radio" name="change-after-ei" value="no" />No
+                  <li>Will any of these change after Early Intervention ends?
+                    <input type="radio" name="change-after-ei" value="yes" />Yes
+                    <input type="radio" name="change-after-ei" value="no" />No
 
-                      <ul data-switch="change-after-ei">
-                        <li class="yes">
+                    <ul data-switch="change-after-ei">
+                      <li class="yes">
                         <table>
-                        <tr>
-                          <th>Support/Service</th>
-                          <th>Hours per Week after EI ends</th>
-                        </tr>
-                        <tr>
-                          <td>
-                            <input type="checkbox" id="afterei-speech-therapy">
-                            <label for="afterei-speech-therapy">Speech therapy</label>
-                          </td>
-                          <td>
-                            <input type="number" min="0" value="0" data-activate="afterei-speech-therapy" name="afterei-speech-therapy-hours" id="afterei-speech-therapy-hours" disabled />
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <input type="checkbox" id="afterei-family">
-                            <label for="afterei-family">Family Therapist</label>
-                          </td>
-                          <td>
-                            <input type="number" min="0" value="0" data-activate="afterei-family" name="afterei-family-hours" id="afterei-family-hours" disabled />
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <input type="checkbox" id="afterei-ot">
-                            <label for="afterei-ot">Occupational Therapy (OT)</label>
-                          </td>
-                          <td>
-                            <input type="number" min="0" value="0" data-activate="afterei-ot" name="afterei-ot-hours" id="afterei-ot-hours" disabled />
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <input type="checkbox" id="afterei-pt">
-                            <label for="afterei-pt">Physical Therapy (PT)</label>
-                          </td>
-                          <td>
-                            <input type="number" min="0" value="0" data-activate="afterei-pt" name="afterei-pt-hours" id="afterei-pt-hours" disabled />
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <input type="checkbox" id="afterei-social">
-                            <label for="afterei-social">Social Skills Group or Play Group</label>
-                          </td>
-                          <td>
-                            <input type="number" min="0" value="0" data-activate="afterei-social" name="afterei-social-hours" id="afterei-social-hours" disabled />
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <input type="checkbox" id="afterei-therapist">
-                            <label for="afterei-therapist">Therapist</label>
-                          </td>
-                          <td>
-                            <input type="number" min="0" value="0" data-activate="afterei-therapist" name="afterei-therapist-hours" id="afterei-therapist-hours" disabled />
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <input type="checkbox" id="afterei-case-worker">
-                            <label for="afterei-case-worker">Case Worker</label>
-                          </td>
-                          <td>
-                            <input type="number" min="0" value="0" data-activate="afterei-case-worker" name="afterei-case-worker-hours" id="afterei-case-worker-hours" disabled />
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <input type="checkbox" id="afterei-educational-advocate">
-                            <label for="afterei-educational-advocate">Educational Advocate</label>
-                          </td>
-                          <td>
-                            <input type="number" min="0" value="0" data-activate="afterei-educational-advocate" name="afterei-educational-advocate-hours" id="afterei-educational-advocate-hours" disabled />
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <input type="checkbox" id="afterei-care-coordinator">
-                            <label for="afterei-care-coordinator">Care Coordinator</label>
-                          </td>
-                          <td>
-                            <input type="number" min="0" value="0" data-activate="afterei-care-coordinator" name="afterei-care-coordinator-hours" id="afterei-care-coordinator-hours" disabled />
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <input type="checkbox" id="afterei-other">
-                            <label for="afterei-other">Other</label>
-                          </td>
-                          <td>
-                            <input type="number" min="0" value="0" data-activate="afterei-other" name="afterei-other-hours" id="afterei-other-hours" disabled />
-                          </td>
-                        </tr>
-                      </table>
-                        </li>
-                      </ul>
-                    </li>
-                  </ol>
+                          <tr>
+                            <th>Support/Service</th>
+                            <th>Hours per Week after EI ends</th>
+                          </tr>
+                          <tr>
+                            <td>
+                              <input type="checkbox" id="afterei-speech-therapy">
+                              <label for="afterei-speech-therapy">Speech therapy</label>
+                            </td>
+                            <td>
+                              <input type="number" min="0" value="0" data-activate="afterei-speech-therapy" name="afterei-speech-therapy-hours" id="afterei-speech-therapy-hours" disabled />
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <input type="checkbox" id="afterei-family">
+                              <label for="afterei-family">Family Therapist</label>
+                            </td>
+                            <td>
+                              <input type="number" min="0" value="0" data-activate="afterei-family" name="afterei-family-hours" id="afterei-family-hours" disabled />
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <input type="checkbox" id="afterei-ot">
+                              <label for="afterei-ot">Occupational Therapy (OT)</label>
+                            </td>
+                            <td>
+                              <input type="number" min="0" value="0" data-activate="afterei-ot" name="afterei-ot-hours" id="afterei-ot-hours" disabled />
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <input type="checkbox" id="afterei-pt">
+                              <label for="afterei-pt">Physical Therapy (PT)</label>
+                            </td>
+                            <td>
+                              <input type="number" min="0" value="0" data-activate="afterei-pt" name="afterei-pt-hours" id="afterei-pt-hours" disabled />
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <input type="checkbox" id="afterei-social">
+                              <label for="afterei-social">Social Skills Group or Play Group</label>
+                            </td>
+                            <td>
+                              <input type="number" min="0" value="0" data-activate="afterei-social" name="afterei-social-hours" id="afterei-social-hours" disabled />
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <input type="checkbox" id="afterei-therapist">
+                              <label for="afterei-therapist">Therapist</label>
+                            </td>
+                            <td>
+                              <input type="number" min="0" value="0" data-activate="afterei-therapist" name="afterei-therapist-hours" id="afterei-therapist-hours" disabled />
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <input type="checkbox" id="afterei-case-worker">
+                              <label for="afterei-case-worker">Case Worker</label>
+                            </td>
+                            <td>
+                              <input type="number" min="0" value="0" data-activate="afterei-case-worker" name="afterei-case-worker-hours" id="afterei-case-worker-hours" disabled />
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <input type="checkbox" id="afterei-educational-advocate">
+                              <label for="afterei-educational-advocate">Educational Advocate</label>
+                            </td>
+                            <td>
+                              <input type="number" min="0" value="0" data-activate="afterei-educational-advocate" name="afterei-educational-advocate-hours" id="afterei-educational-advocate-hours" disabled />
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <input type="checkbox" id="afterei-care-coordinator">
+                              <label for="afterei-care-coordinator">Care Coordinator</label>
+                            </td>
+                            <td>
+                              <input type="number" min="0" value="0" data-activate="afterei-care-coordinator" name="afterei-care-coordinator-hours" id="afterei-care-coordinator-hours" disabled />
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <input type="checkbox" id="afterei-other">
+                              <label for="afterei-other">Other</label>
+                            </td>
+                            <td>
+                              <input type="number" min="0" value="0" data-activate="afterei-other" name="afterei-other-hours" id="afterei-other-hours" disabled />
+                            </td>
+                          </tr>
+                        </table>
+                      </li>
+                    </ul>
+                  </li>
+                </ol>
 
-              <a href="https://docs.google.com/forms/d/1iY-E5yIKwSSJPofKdJ2DrzAiC1U8bHJhxnNpqYe29wU/viewform">Want to say something about this section? Provide feedback here.</a><br />
-              <a href="#p3" class="proceed btn btn-large btn-info">Continue &raquo;</a>
-                            <hr />
+                <a href="https://docs.google.com/forms/d/1iY-E5yIKwSSJPofKdJ2DrzAiC1U8bHJhxnNpqYe29wU/viewform">Want to say something about this section? Provide feedback here.</a><br />
+                <a href="#p3" class="proceed btn btn-large btn-info">Continue &raquo;</a>
+              </section>
 
-                  <h2 id="p3">Medical Specialists</h2>
-                  <ol>
-                    <li><p><em>What specialists are on your child’s medical team?</em></P> 
-					<p>This should include your child's medical providers outside of the Early Intervention system.</p>
+              <section class="non-printable"  id="p3">
+                <h2>Medical Specialists</h2>
+                <ol>
+                  <li><p><em>What specialists are on your child’s medical team?</em></p> 
+                   <p>This should include your child's medical providers outside of the Early Intervention system.</p>
 
-                      <table id="medical-specialists">
-                        <tr>
-                          <th>Specialist</th>
-                        </tr>
-                        <tr>
-                          <td>
-                            <input type="checkbox" id="specialist-pcp">
-                            <label for="specialist-pcp">Primary Care Physician</label>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <input type="checkbox" id="specialist-slp">
-                            <label for="specialist-slp">Speech Language Pathologist</label>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <input type="checkbox" id="specialist-neurologist">
-                            <label for="specialist-neurologist">Neurologist</label>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <input type="checkbox" id="specialist-developmental-pediatrician">
-                            <label for="specialist-developmental-pediatrician">Developmental Pediatrician</label>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <input type="checkbox" id="specialist-psychiatrist">
-                            <label for="specialist-psychiatrist">Psychiatrist</label>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <input type="checkbox" id="specialist-psychologist">
-                            <label for="specialist-psychologist">Psychologist</label>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <input type="checkbox" id="specialist-gastroenterologist">
-                            <label for="specialist-gastroenterologist">Gastroenterologist</label>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <input type="checkbox" id="specialist-ot">
-                            <label for="specialist-ot">Occupational Therapist</label>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <input type="checkbox" id="specialist-physical-therapist">
-                            <label for="specialist-physical-therapist">Physical Therapist</label>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <input type="checkbox" id="specialist-play-therapist">
-                            <label for="specialist-play-therapist">Play Therapist</label>
-                          </td>
-                        </tr>
-						<tr>
-						   <td>
-						     <input type="checkbox" id="specialist-bcba">
-							 <label for="specialist-bcba">Board Certified Behavior Analyst (BCBA)</label>
-						   </td>
-						</tr>
-                      </table>
-                    </li>
-                  </ol>
+                   <table id="medical-specialists">
+                    <tr>
+                      <th>Specialist</th>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input type="checkbox" id="specialist-pcp">
+                        <label for="specialist-pcp">Primary Care Physician</label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input type="checkbox" id="specialist-slp">
+                        <label for="specialist-slp">Speech Language Pathologist</label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input type="checkbox" id="specialist-neurologist">
+                        <label for="specialist-neurologist">Neurologist</label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input type="checkbox" id="specialist-developmental-pediatrician">
+                        <label for="specialist-developmental-pediatrician">Developmental Pediatrician</label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input type="checkbox" id="specialist-psychiatrist">
+                        <label for="specialist-psychiatrist">Psychiatrist</label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input type="checkbox" id="specialist-psychologist">
+                        <label for="specialist-psychologist">Psychologist</label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input type="checkbox" id="specialist-gastroenterologist">
+                        <label for="specialist-gastroenterologist">Gastroenterologist</label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input type="checkbox" id="specialist-ot">
+                        <label for="specialist-ot">Occupational Therapist</label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input type="checkbox" id="specialist-physical-therapist">
+                        <label for="specialist-physical-therapist">Physical Therapist</label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input type="checkbox" id="specialist-play-therapist">
+                        <label for="specialist-play-therapist">Play Therapist</label>
+                      </td>
+                    </tr>
+                    <tr>
+                     <td>
+                       <input type="checkbox" id="specialist-bcba">
+                       <label for="specialist-bcba">Board Certified Behavior Analyst (BCBA)</label>
+                     </td>
+                   </tr>
+                 </table>
+               </li>
+             </ol>
 
-                  <!-- This line, "These practitioners can provide good support while your child transitions out of EI, and can advocate on your behalf for any changes which may be needed to your child’s school program. Keep them in mind!"
-				  should be included on the "Results" page when listing the medical providers that the family works with.-->
+             <a href="https://docs.google.com/forms/d/1iY-E5yIKwSSJPofKdJ2DrzAiC1U8bHJhxnNpqYe29wU/viewform">Want to say something about this section? Provide feedback here.</a><br />
+             <a href="#p4" class="proceed btn btn-large btn-info">Continue &raquo;</a>
+           </p></li></ol>
+         </section>
 
-              <a href="https://docs.google.com/forms/d/1iY-E5yIKwSSJPofKdJ2DrzAiC1U8bHJhxnNpqYe29wU/viewform">Want to say something about this section? Provide feedback here.</a><br />
-              <a href="#p4" class="proceed btn btn-large btn-info">Continue &raquo;</a>
-                            <hr />
-
+              <section class="non-printable"  id="p4">
                   <h2 id="p4">Social Supports</h2>
                   <ol>
                     <li><em>What publicly funded or income-based supports and services are you receiving?</em>
@@ -644,9 +662,11 @@
 
               <a href="https://docs.google.com/forms/d/1iY-E5yIKwSSJPofKdJ2DrzAiC1U8bHJhxnNpqYe29wU/viewform">Want to say something about this section? Provide feedback here.</a><br />
               <a href="#p5" class="proceed btn btn-large btn-info">Continue &raquo;</a>
-                            <hr />
+              </section>
 
-                  <h2 id="p5">School Services</h2>
+
+              <section class="non-printable"  id="p5">
+                  <h2>School Services</h2>
                   <ol>
                     <li><em>What supports and services will your child receive in school?</em>
 
@@ -707,9 +727,10 @@
 
               <a href="https://docs.google.com/forms/d/1iY-E5yIKwSSJPofKdJ2DrzAiC1U8bHJhxnNpqYe29wU/viewform">Want to say something about this section? Provide feedback here.</a><br />
               <a href="#p6" class="proceed btn btn-large btn-info">Continue &raquo;</a>
-                            <hr />
+              </section>
 
-                    <h2 id="p6">Community Supports</h2>
+              <section class="non-printable"  id="p6">
+                    <h2>Community Supports</h2>
 
                     <ol>
                       <li><em>What community-based organizations, services, and supports are you and your family connected to?</em>
@@ -758,11 +779,10 @@
                     </ol>
 
               <a href="#results" class="proceed btn btn-large btn-info">See Your Results &raquo;</a>
-              <hr />
-              </p></li></ol></ul></li></ol></div>
-
-              <div class="printable">
-              <h2 id="results">Results</h2>
+              </section>
+              
+              <section class="printable" id="results">
+              <h2>Results</h2>
                 <a class="non-printable" onclick="javascript:window.print();return false;" href="#">Print</a>
                 <!-- <a onclick="javascript:function copyToClipboard (text) {
   window.prompt ('Copy to clipboard: Ctrl+C, Enter', text);
@@ -794,10 +814,10 @@
                       <td>
                         <label for="results-ei-aba">Applied Behavioral Analysis (ABA)</label>
                       </td>
-                      <td class="current" data-sum="ei-aba-hours"></td>
+                      <td class="current aba" data-sum="ei-aba-hours"></td>
                       <td></td>
                       <td class="iep"></td>
-                      <td class="future" data-hour-total></td>
+                      <td class="future aba" data-hour-total></td>
                     </tr>
                     <tr>
                       <td>
@@ -903,6 +923,28 @@
               </ul>
                       </li>
                     </ul>
+
+                                            <ul data-switch="interested-continuing-aba">
+                          <li class="no"><p>It appears as though you 
+are not interested in obtaining ABA services for your child once they have aged 
+out of EI.</p> <p>Each parent and guardian knows what is best for his or her 
+own child. If you have decided against pursuing ABA therapy, it is important to 
+provide your child with as many other interventions as you are comfortable with. 
+That being said, you might want to revisit this decision with the specialists on your 
+child’s medical team in the future. While ABA might not feel like the best fit now, 
+perhaps there might come a time when it will be a welcomed intervention.</p>
+</li>
+                        </ul>
+
+                    <ul data-switch="aba-services-afterei">
+                      <li class="no">
+                         <p>It appears as though you are not interested in obtaining ABA services for your child.</p> <p>Each parent and guardian knows what is best for his or her own child. If you have decided against pursuing ABA therapy as an option for your child, it is important to provide your child with as many other interventions as you are comfortable with. That being said, you might want to revisit this decision with the specialists on your child’s medical team. While ABA might not feel like the best fit now, perhaps it’s a therapy to pursue in the future.</p>
+                      </li>
+                    </ul>
+
+                    <p class="less-aba">It appears that once your child transitions out of EI that he or she will be receiving less hours of ABA services. Sometimes this occurs because a child is enrolled in a school program that doesn’t allow for the amount of ABA to continue. It might be helpful to look at the number of hours your child is in school each week, add that to the number of hours of in-home ABA you expect to receive after EI, and then discuss with your service coordinator whether or not your child will be receiving comparable interventions.</p>
+
+                    <p class="no-future-aba">It appears that your child will no longer be receiving ABA services once he or she transitions out of EI. If you are interested in continuing ABA services in your home once EI ends, you can speak with your service coordinator about using your insurance benefits to access ABA under ARICA.</p><p> However, it’s also a possibility that you no longer want to continue receiving ABA services in your home after EI ends. This is certainly your choice and you know what’s best for your child. However, you might want to consider discussing this with your service coordinator and some of the specialists on your child’s medical team. Many healthcare professionals recommend that young children on the autism spectrum continue to receive ABA services in the home for numerous reasons. It might be helpful to hear what reasons might apply to your child. The best people to address this are the specialists you and your family are working with.</p>
 
                     <p class="could-improve">Your child is expected to receive the same amount of services and supports once you transition out of Early Intervention. This improves the likelihood that your son or daughter will maintain the same rate of progress that they achieved in Early Intervention. If you would like to see your child’s rate of progress improve, you could discuss the areas where your child has the greatest challenges. You might also consult your team of providers outside of Early Intervention to see if anyone is interested in seeing a greater rate of progress in a particular area.</p>
                     <p class="could-improve">It is often true that many families of children with autism are overwhelmed by the amount of services and supports they receive, as well as the demands of a rigorous schedule of interventions. If you find that your schedule is taxing, it might be good to revisit increasing services at a time when you’re less overwhelmed. - Or you might never feel the need to consider increasing services and supports for your child. The latter decision is perfectly acceptable.</p>

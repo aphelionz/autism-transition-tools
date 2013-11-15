@@ -16,7 +16,7 @@ li { padding: 15px 0; }
 
 th label { font-weight: normal; }
 
-hr { border: 0; margin-bottom: 100%; }
+section { border: 0; margin-bottom: 100%; }
 
 /* bootstrap 3 helpers */
 
@@ -64,3 +64,5 @@ ul[data-switch] > li { display: none; }
 
   .printable h2 { margin: 0; padding: 0; }
 }
+
+.aba-hours-entered { display: none; }
