@@ -189,9 +189,12 @@
                     <li class="no">
                       <ul>
                         <li>Which is dissatisfying to you?
-                          <input type="radio" name="dissatisfying" value="amount"/>The amount of my child's services.
-                          <input type="radio" name="dissatisfying" value="quality"/>The quality of my child's services.
-                          <input type="radio" name="dissatisfying" value="both"/>Both are dissatisfying.
+                          <ul>
+
+                          <li><input type="radio" name="dissatisfying" value="amount"/>The amount of my child's services.</li>
+                          <li><input type="radio" name="dissatisfying" value="quality"/>The quality of my child's services.</li>
+                          <li><input type="radio" name="dissatisfying" value="both"/>Both are dissatisfying.</li>
+                          </ul>
 						  <ul data-switch="dissatisfying">
 						  <li class="amount quality both">Have you used your health insurance benefits to secure therapies or services through a provider outside of the Early Intervention system?
 						  <input type="radio" name="dissatisfying-insurance" value="yes"/>Yes.
@@ -315,7 +318,7 @@
                             <label for="additional-therapist">Therapist</label>
                           </td>
                           <td>
-                            <input type="number" min="0" value="0" data-actiate="additional-therapist" name="additional-therapist-hours" id="additional-therapist-hours" disabled />
+                            <input type="number" min="0" value="0" data-activate="additional-therapist" name="additional-therapist-hours" id="additional-therapist-hours" disabled />
                           </td>
                         </tr>
                         <tr>
@@ -484,6 +487,12 @@
                         </tr>
                         <tr>
                           <td>
+                            <input type="checkbox" id="specialist-slp">
+                            <label for="specialist-slp">Speech Language Pathologist</label>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
                             <input type="checkbox" id="specialist-neurologist">
                             <label for="specialist-neurologist">Neurologist</label>
                           </td>
@@ -647,7 +656,7 @@
                             <label for="school-speech-therapy">Speech Therapy</label>
                           </td>
                           <td>
-                            <input type="number" min="0" value="0" data-activate="school-speech-therapy" name="school-speech-therapy-hours" id="school-speech-therapy-hours" disabled />
+                            <input type="number" min="0" max="5" step="0.25" value="0" data-activate="school-speech-therapy" name="school-speech-therapy-hours" id="school-speech-therapy-hours" disabled />
                           </td>
                         </tr>
                         <tr>
@@ -656,7 +665,7 @@
                             <label for="school-ot">Occupational Therapy (OT)</label>
                           </td>
                           <td>
-                            <input type="number" min="0" value="0" data-activate="school-ot" name="school-ot-hours" id="school-ot-hours" disabled />
+                            <input type="number" min="0" max="5" step="0.25" value="0" data-activate="school-ot" name="school-ot-hours" id="school-ot-hours" disabled />
                           </td>
                         </tr>
                         <tr>
@@ -665,7 +674,7 @@
                             <label for="school-pt">Physical Therapy</label>
                           </td>
                           <td>
-                            <input type="number" min="0" value="0" data-activate="school-pt" name="school-pt-hours" id="school-pt-hours" disabled />
+                            <input type="number" min="0" max="5" step="0.25" value="0" data-activate="school-pt" name="school-pt-hours" id="school-pt-hours" disabled />
                           </td>
                         </tr>
                         <tr>
@@ -674,7 +683,7 @@
                             <label for="school-social">Social Skills Group or Play Group</label>
                           </td>
                           <td>
-                            <input type="number" min="0" value="0" data-activate="school-social" name="school-social-hours" id="school-social-hours" disabled />
+                            <input type="number" min="0" max="5" step="0.25" value="0" data-activate="school-social" name="school-social-hours" id="school-social-hours" disabled />
                           </td>
                         </tr>
                         <tr>
@@ -683,7 +692,7 @@
                             <label for="school-bcba-consult">Parent consultation with a BCBA</label>
                           </td>
                           <td>
-                            <input type="number" min="0" value="0" data-activate="school-bcba-consult" name="school-bcba-consult-hours" id="school-bcba-consult-hours" disabled />
+                            <input type="number" min="0" max="5" step="0.25" value="0" data-activate="school-bcba-consult" name="school-bcba-consult-hours" id="school-bcba-consult-hours" disabled />
                           </td>
                         </tr>
                       </table>
@@ -734,7 +743,7 @@
                           </tr><tr>
                           <td>
                             <input type="checkbox" id="community-other">
-                            <label for="community-other">Other (please explain)</label>
+                            <label for="community-other">Other</label>
                           </td>
                           </tr>
                       </table>
@@ -872,6 +881,19 @@
                     <p class="decreasing">If this is a purposeful decision, then it might be important to discuss with your service coordinator how to monitor your child’s rate of progress to ensure that they continue to gain skills at the rate they did in Early Intervention.</p>
                     <p class="decreasing">If this isn’t a purposeful decision, you have a couple options available to you. You can pursue additional services privately through your health insurance benefits, or you can explore your options with modifying your child’s IEP so that they receive more services, or you can do both.</p>
                     <p class="decreasing">If you’d like more information about the IEP process or on working with the school district on modifying your child’s IEP, you can contact the Federation for Children with Special Needs at (617) 236-7210 or (800) 331-0688 (in MA only) or take a look at their <a href="http://fcsn.org">website</a>. The Federation for Children with Special Needs also hosts free workshops focusing on your child’s educational rights at different locations across the state. To learn more about those workshops, you can view more information <a href="http://fcsn.org/pti/workshops/home.php#schedule">here</a>.</p>
+
+                    <ul data-switch="satisfied-with-ei">
+                      <li class="yes">
+                        <p>You're satisfied with the amount and quality of your EI services - that’s wonderful! It might be helpful going forward if you work with your service coordinator to identify what about the amount and quality of services is satisfying for you. This will help you appraise providers in the future.
+                      </li>
+                      <li class="no">
+                        <ul data-switch="dissatisfying-insurance">
+              <li class="yes"><p>If you've spoken with your service coordinator about your dissatisfaction with the services that your child is receiving and have also spoken with your service coordinator's supervisor, then it's likely that you have exhausted your options for your EI services. If you have identified and began to work with providers outside the EI system that you are satisfied with, then you are well on your way to building an effective team for your child once they have aged out of EI.</p>
+              </li>
+              <li class="no"><p>If you've spoken with your service coordinator about your dissatisfaction with your child's services, and have also spoken with your service coordionator's supervisor, then you might want to explore options to work with providers outside of the Early Intervention system. Identifying providers that accept your health insurance is among the first steps to building an effective care team that will help you sustain your child's outcomes once you transition out of Early Intervention.</p></li>  
+              </ul>
+                      </li>
+                    </ul>
 
                     <p class="could-improve">Your child is expected to receive the same amount of services and supports once you transition out of Early Intervention. This improves the likelihood that your son or daughter will maintain the same rate of progress that they achieved in Early Intervention. If you would like to see your child’s rate of progress improve, you could discuss the areas where your child has the greatest challenges. You might also consult your team of providers outside of Early Intervention to see if anyone is interested in seeing a greater rate of progress in a particular area.</p>
                     <p class="could-improve">It is often true that many families of children with autism are overwhelmed by the amount of services and supports they receive, as well as the demands of a rigorous schedule of interventions. If you find that your schedule is taxing, it might be good to revisit increasing services at a time when you’re less overwhelmed. - Or you might never feel the need to consider increasing services and supports for your child. The latter decision is perfectly acceptable.</p>

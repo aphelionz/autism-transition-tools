@@ -55,4 +55,4 @@ h2 { padding-top: 1em; }
 
 ul[data-switch] > li { display: none; }
 
-.text-results p { display: none; }
+.text-results > p { display: none; }

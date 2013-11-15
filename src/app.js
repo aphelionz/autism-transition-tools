@@ -52,6 +52,8 @@ $(document).ready(function() {
       var ul = $(this);
       var id = ul.data("switch");
 
+      console.log(id);
+
       $('[name="'+id+'"]').click(function(e) {
         var val = $(this).val();
 
@@ -141,7 +143,7 @@ function showTextResults(current, iep, future) {
   var grand_total = current + future;
   // console.log(current, iep, future, grand_total);
 
-  $(".text-results p").hide();
+  $(".text-results > p").hide();
 
   if($("#ei-music-hours").val() > 0) {
     $(".sophia-hates-music").show();
