@@ -183,9 +183,10 @@
                   </li>
 
                   <li><em>Are you satisfied with the amount and quality of your EI services?</em>
-                    <input type="radio" name="satisfied-with-ei" value="yes" />Yes
-                    <input type="radio" name="satisfied-with-ei" value="no">No
-
+                    <ul>
+                      <li><input type="radio" name="satisfied-with-ei" value="yes" />Yes</li>
+                      <li><input type="radio" name="satisfied-with-ei" value="no">No</li>
+                    </ul>
                     <ul data-switch="satisfied-with-ei">
                       <li class="yes">That’s wonderful! It might be helpful going forward if you work with your service coordinator to identify what about the amount and quality of services is satisfying for you. This will help you appraise providers in the future.</li>
                       <li class="no">
@@ -198,8 +199,10 @@
                             </ul>
                             <ul data-switch="dissatisfying">
                               <li class="amount quality both">Have you used your health insurance benefits to secure therapies or services through a provider outside of the Early Intervention system?
-                                <input type="radio" name="dissatisfying-insurance" value="yes"/>Yes.
-                                <input type="radio" name="dissatisfying-insurance" value="no"/>No.
+                                <ul>
+                                  <li><input type="radio" name="dissatisfying-insurance" value="yes"/>Yes.</li>
+                                  <li><input type="radio" name="dissatisfying-insurance" value="no"/>No.</li>
+                                </ul>
                                 <ul data-switch="dissatisfying-insurance">
                                   <li class="yes"><p>If you've spoken with your service coordinator about your dissatisfaction with the services that your child is receiving and have also spoken with your service coordinator's supervisor, then it's likely that you have exhausted your options for your EI services. If you have identified and began to work with providers outside the EI system that you are satisfied with, then you are well on your way to building an effective team for your child once they have aged out of EI.</p>
                                   </li>
@@ -216,9 +219,10 @@
                   <li class="no-aba-hours">
                     <em>It appears that your child is not currently receiving ABA services. Do you plan on receiving ABA before you transition out of Early Intervention?</em>
 
-                    <input type="radio" name="aba-services-afterei" value="yes" />Yes
-                    <input type="radio" name="aba-services-afterei" value="no">No
-
+                    <ul>
+                      <li><input type="radio" name="aba-services-afterei" value="yes" />Yes</li>
+                      <li><input type="radio" name="aba-services-afterei" value="no">No</li>
+                    </ul>
                     <ul data-switch="aba-services-afterei">
                       <li class="yes">
                         <p>Please edit the table above to reflect the number of hours of ABA that your child will receive.</p>
@@ -226,10 +230,11 @@
 
                         <em>Does your health insurance cover ABA?</em>
 
-                        <input type="radio" name="health-insurance-covers-aba" value="yes" />Yes
-                        <input type="radio" name="health-insurance-covers-aba" value="no">No
-                        <input type="radio" name="health-insurance-covers-aba" value="notsure">Not Sure
-
+                        <ul>
+                          <li><input type="radio" name="health-insurance-covers-aba" value="yes" />Yes</li>
+                          <li><input type="radio" name="health-insurance-covers-aba" value="no">No</li>
+                          <li><input type="radio" name="health-insurance-covers-aba" value="notsure">Not Sure</li>
+                        </ul>
                         <ul data-switch="health-insurance-covers-aba">
                           <li class="yes">
                             <p>It’s important to decide as soon as possible which ABA provider you would like to work with. You can discuss potential providers with your service coordinator or the specialist who focuses most on your child’s behavioral development (for some families this is a developmental pediatrician, while for others this might be a neurologist). Once you have identified potential providers, it is important to confirm that they will accept your health insurance and begin the process of securing services for your child. Some ABA providers have long wait times.</p>
@@ -249,10 +254,10 @@
                   <li class="aba-hours-entered">
                     <em>Will your ABA services continue once you transition out of EI? If you are unsure, select “no.”</em>
                     
-                    <input type="radio" name="aba-services-continuing" value="yes" />Yes
-                    <input type="radio" name="aba-services-continuing" value="no">No
-
-
+                    <ul>
+                      <li><input type="radio" name="aba-services-continuing" value="yes" />Yes</li>
+                      <li><input type="radio" name="aba-services-continuing" value="no">No</li>
+                    </ul>
                     <ul data-switch="aba-services-continuing">
                       <li class="yes">
                         <p>If your ABA services are scheduled to continue once your child ages out of 
@@ -263,14 +268,39 @@
                       <li class="no">
                         <em>Are you interested in continuing with ABA services after EI?</em>
 
-                        <input type="radio" name="interested-continuing-aba" value="yes" />Yes
-                        <input type="radio" name="interested-continuing-aba" value="no">No
+                        <ul>
+                          <li><input type="radio" name="interested-continuing-aba" value="yes" />Yes</li>
+                          <li><input type="radio" name="interested-continuing-aba" value="no">No</li>
+                        </ul>
+                        <ul data-switch="interested-continuing-aba">
+                          <li class="yes">
+                            <em>Does your health insurance cover ABA?</em>
+
+                            <ul>
+                              <li><input type="radio" name="health-insurance-covers-aba" value="yes" />Yes</li>
+                              <li><input type="radio" name="health-insurance-covers-aba" value="no">No</li>
+                              <li><input type="radio" name="health-insurance-covers-aba" value="notsure">Not Sure</li>
+                            </ul>
+                            <ul data-switch="health-insurance-covers-aba">
+                              <li class="yes">
+                                <p>It’s important to decide as soon as possible which ABA provider you would like to work with. You can discuss potential providers with your service coordinator or the specialist who focuses most on your child’s behavioral development (for some families this is a developmental pediatrician, while for others this might be a neurologist). Once you have identified potential providers, it is important to confirm that they will accept your health insurance and begin the process of securing services for your child. Some ABA providers have long wait times.</p>
+                              </li>
+                              <li class="no">
+                                <p>If your health insurance does not cover ABA, there may be some options available to you. You can learn more about these options by contacting the Autism Insurance Resource Center at (781) 642-0248 or (800) 642-0249. You can explore their website <a href=”https://www.disabilityinfo.org/arica/”>here</a>.</p>
+                              </li>
+                              <li class="notsure">
+                                <p>To determine whether or not your health insurance covers ABA, you can contact the Autism Insurance Resource Center. If your health insurance does not cover ABA, there might be other options available. You can reach the Autism Insurance Resource Center at (781) 642-0248 or (800) 642-0249. You can explore their website <a href=”https://www.disabilityinfo.org/arica/”>here</a>.</p>
+                                <!-- This is where the insurance survey would go. -->
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
                       </li>
                     </ul>
                   </li>
                 </ol>
 
-                <a href="https://docs.google.com/forms/d/1iY-E5yIKwSSJPofKdJ2DrzAiC1U8bHJhxnNpqYe29wU/viewform">Want to say something about this section? Provide feedback here.</a><br />
+                <a target="_blank" href="https://docs.google.com/forms/d/1iY-E5yIKwSSJPofKdJ2DrzAiC1U8bHJhxnNpqYe29wU/viewform">Want to say something about this section? Provide feedback here.</a><br />
                 <a href="#p2" class="proceed btn btn-large btn-info">Continue &raquo;</a>
               </section>
 
@@ -381,9 +411,10 @@
                   </li>
 
                   <li>Will any of these change after Early Intervention ends?
-                    <input type="radio" name="change-after-ei" value="yes" />Yes
-                    <input type="radio" name="change-after-ei" value="no" />No
-
+                    <ul>
+                      <li><input type="radio" name="change-after-ei" value="yes" />Yes</li>
+                      <li><input type="radio" name="change-after-ei" value="no" />No</li>
+                    </ul>
                     <ul data-switch="change-after-ei">
                       <li class="yes">
                         <table>
@@ -487,7 +518,7 @@
                   </li>
                 </ol>
 
-                <a href="https://docs.google.com/forms/d/1iY-E5yIKwSSJPofKdJ2DrzAiC1U8bHJhxnNpqYe29wU/viewform">Want to say something about this section? Provide feedback here.</a><br />
+                <a target="_blank" href="https://docs.google.com/forms/d/1iY-E5yIKwSSJPofKdJ2DrzAiC1U8bHJhxnNpqYe29wU/viewform">Want to say something about this section? Provide feedback here.</a><br />
                 <a href="#p3" class="proceed btn btn-large btn-info">Continue &raquo;</a>
               </section>
 
@@ -571,7 +602,7 @@
                </li>
              </ol>
 
-             <a href="https://docs.google.com/forms/d/1iY-E5yIKwSSJPofKdJ2DrzAiC1U8bHJhxnNpqYe29wU/viewform">Want to say something about this section? Provide feedback here.</a><br />
+             <a target="_blank" href="https://docs.google.com/forms/d/1iY-E5yIKwSSJPofKdJ2DrzAiC1U8bHJhxnNpqYe29wU/viewform">Want to say something about this section? Provide feedback here.</a><br />
              <a href="#p4" class="proceed btn btn-large btn-info">Continue &raquo;</a>
            </p></li></ol>
          </section>
@@ -614,9 +645,10 @@
 
                     <li>
                       Will any of these end when your child transitions out of EI?
-                      <input type="radio" name="ei-supports-ending" value="yes" />Yes
-                      <input type="radio" name="ei-supports-ending" value="no" />No
-
+                      <ul>
+                        <li><input type="radio" name="ei-supports-ending" value="yes" />Yes</li>
+                        <li><input type="radio" name="ei-supports-ending" value="no" />No</li>
+                      </ul>
                       <ul data-switch="ei-supports-ending">
                         <li class="yes">Which ones?
                           
@@ -660,7 +692,7 @@
                         </li>
                       </ol>
 
-              <a href="https://docs.google.com/forms/d/1iY-E5yIKwSSJPofKdJ2DrzAiC1U8bHJhxnNpqYe29wU/viewform">Want to say something about this section? Provide feedback here.</a><br />
+              <a target="_blank" href="https://docs.google.com/forms/d/1iY-E5yIKwSSJPofKdJ2DrzAiC1U8bHJhxnNpqYe29wU/viewform">Want to say something about this section? Provide feedback here.</a><br />
               <a href="#p5" class="proceed btn btn-large btn-info">Continue &raquo;</a>
               </section>
 
@@ -725,7 +757,7 @@
                       <input type="checkbox" name="iep-dont-know" id="iep-dont-know" /> I don’t know yet because we haven’t had an IEP meeting. I haven’t seen a draft of the IEP that the Team is proposing.
                     </li></ol>
 
-              <a href="https://docs.google.com/forms/d/1iY-E5yIKwSSJPofKdJ2DrzAiC1U8bHJhxnNpqYe29wU/viewform">Want to say something about this section? Provide feedback here.</a><br />
+              <a target="_blank" href="https://docs.google.com/forms/d/1iY-E5yIKwSSJPofKdJ2DrzAiC1U8bHJhxnNpqYe29wU/viewform">Want to say something about this section? Provide feedback here.</a><br />
               <a href="#p6" class="proceed btn btn-large btn-info">Continue &raquo;</a>
               </section>
 
