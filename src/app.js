@@ -122,14 +122,14 @@ function getTotals() {
     $(el).html(sum);
   });
 
-  var current_total = parseFloat($('[data-total="current"]').html());
-  var future_total = parseFloat($('[data-total="future"]').html());
-  var iep_total = parseFloat($('[data-total="iep"]').html());
-
-  showTextResults(current_total, future_total, iep_total);
+  showTextResults();
 }
 
-function showTextResults(current, iep, future) {
+function showTextResults() {
+  var current = parseFloat($('[data-total="current"]').html());
+  var future = parseFloat($('[data-total="future"]').html());
+  var iep = parseFloat($('[data-total="iep"]').html());
+
   var grand_total = current + future;
   // console.log(current, iep, future, grand_total);
 
