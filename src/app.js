@@ -1,4 +1,6 @@
 $(document).ready(function() {
+    getTotals();
+
     $("input").on("change", function(e) {
       getTotals();
     });
@@ -166,7 +168,7 @@ function showTextResults() {
 
   var snap = $("#support-snap-ending").prop("checked");
   var wic = $("#support-wic-ending").prop("checked");
-  var dds = $("#support-dds-ending").prop("checked");
+  var dds = $("#support-dds").prop("checked");
   var toys = $("#support-toys-ending").prop("checked");
 
   if(wic && !snap) {
@@ -181,7 +183,7 @@ function showTextResults() {
     $(".wic-and-snap").show();
   }
 
-  if(dds) {
+  if(!dds) {
     $(".no-dds").show();
   }
 

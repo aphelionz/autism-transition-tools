@@ -67,6 +67,7 @@ ul[data-switch] > li { display: none; }
 
 .aba-hours-entered { display: none; }
 
-ul[data-aggregate] { list-style-type: disc; padding-left: 1em; }
-
+ul[data-aggregate] { list-style-type: disc; padding-bottom: 1em; }
+ul[data-aggregate] li { margin: 0 0 0 2em; padding: 0; }
+ 
 header p, #intro p { margin: 0 0 15px;}
