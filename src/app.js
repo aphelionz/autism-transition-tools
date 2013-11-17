@@ -220,10 +220,15 @@ function showTextResults() {
 
   var aba_hours_currently = parseFloat($(".current.aba").html());
   var aba_hours_future = parseFloat($(".future.aba").html());
+  var aba_interested = $('[name="interested-continuing-aba"]:checked').val();
 
-  if(aba_hours_future === 0) {
-    $(".no-future-aba").show();
-  } else if(aba_hours_currently > aba_hours_future) {
-    $(".less-aba").show();
+  if(aba_interested !== "no") {
+    if(aba_hours_future === 0) {
+      $(".no-future-aba").show();
+    }
+
+    if(aba_hours_currently > aba_hours_future ) {
+      $(".less-aba").show();
+    }    
   }
 }
