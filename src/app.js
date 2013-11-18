@@ -166,8 +166,8 @@ function showTextResults() {
     $(".huzzah").show();
   }
 
-  var snap = $("#support-snap-ending").prop("checked");
-  var wic = $("#support-wic-ending").prop("checked");
+  var snap = $("#support-snap").prop("checked");
+  var wic = $("#support-wic").prop("checked");
   var dds = $("#support-dds").prop("checked");
   var toys = $("#support-toys-ending").prop("checked");
 
@@ -213,10 +213,12 @@ function showTextResults() {
     $('.supports-parents-groups').show();
   } else 
 
+  console.log($("#iep-dont-know"));
   var iep_dont_know = $("#iep-dont-know").prop("checked");
-  console.log("why " + iep_dont_know);
+  var iep_havent_seen = $("#iep-havent-seen").prop("checked");
 
-  if(iep_dont_know) {
+  console.log(iep_dont_know || iep_havent_seen);
+  if(iep_dont_know || iep_havent_seen) {
     $(".iep-dont-know").show();
   }
 
@@ -232,5 +234,21 @@ function showTextResults() {
     if(aba_hours_currently > aba_hours_future ) {
       $(".less-aba").show();
     }    
+  }
+
+  var masshealth = $("#support-masshealth").prop("checked");
+  var cashassistance = $("#support-cashassistance").prop("checked");
+  var ssi = $("#support-ssi").prop("checked");
+
+  if(!masshealth) {
+    $(".no-masshealth").show();
+  }
+
+  if(!ssi && cashassistance) {
+    $(".no-ssi-but-cash").show();
+  }
+
+  if(!ssi && !cashassistance && (wic || snap)) {
+    $(".no-ssi-no-cash-but-wic-or-snap").show();
   }
 }
