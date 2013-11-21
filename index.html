@@ -28,20 +28,6 @@
 
     <body>
 
-      <header class="masthead non-printable">
-        <div class="container">
-          <h1>
-            <em>Thank you for testing this tool!</em>
-          </h1>
-
-          <div class="row">
-            <div class="col-md-12">
-              <p><a class="proceed btn btn-large btn-info" href="#intro">Proceed.</a></p>
-            </div>
-          </div>
-        </div><!-- /container -->
-      </header><!-- /header -->
-
         <!-- Begin Body -->
         <div class="container">
           <div class="row">
@@ -49,6 +35,8 @@
               <!-- TODO: Highlight the current step in the left nav -->
               <div class="list-group non-printable" id="sidebar">
                 <a href="#intro" class="list-group-item">Introduction</a>
+				<!-- This "home life" thing is new. -->
+				<!-- <a href="homelife" class="list-group-item">Family Structure</a> -->
                 <a href="#p1" class="list-group-item">Early Intervention</a>
                 <a href="#p2" class="list-group-item">Additional Private Supports</a>
                 <a href="#p3" class="list-group-item">Specialists</a>
@@ -56,28 +44,95 @@
                 <a href="#p5" class="list-group-item">School Services</a>
                 <a href="#p6" class="list-group-item">Community Supports</a>
                 <a href="#results" class="list-group-item">Results</a>
-			           <a target="_blank" href="https://docs.google.com/forms/d/18yXDh7EMMRo7viiS9lumR0JJtaUUisUScPIm6IZ5fn8/viewform">Tester Survey</a>
+				<p></p>
+				<a target="_blank" href="https://docs.google.com/forms/d/18yXDh7EMMRo7viiS9lumR0JJtaUUisUScPIm6IZ5fn8/viewform" class="submitfeedback btn btn-warning btn-sm">Submit your feedback.</a>			           
+					   <!--What we were using before: <a target="_blank" href="https://docs.google.com/forms/d/18yXDh7EMMRo7viiS9lumR0JJtaUUisUScPIm6IZ5fn8/viewform">Submit your feedback</a>-->
           </div>
             </div><!-- /sidebar -->
 
             <div class="col-md-9">
               <section class="non-printable" id="intro">
-                <h2>Welcome to the Autism Transition Tool</h2>
-                <p>As our children grow and age, there will be many transitions. Ending Early Intervention (EI) services is the first major change that we, as parents and guardians, must weather.</p>
-                <p></p><p>The purpose of this tool is to empower you in building a greater vision of the services, supports, and community-based programs that will help sustain your family as you all grow and age.</p>
-                <p>The following questions are designed to help you assess what services you are receiving in EI and what services you are looking forward to once your child ages out of EI. Once you have completed all the questions, you will be directed to a final page that includes your answers and some resources that may be helpful.</p>
+                <h2>Welcome to the "Almost 3" Autism Transition Tool</h2>
+                <p></p>
+				<p>This tool is designed to assist families and caregivers of children diagnosed with an Autism Spectrum Disorder who live in Massachusetts with their transition out of the Early Intervention system (EI). If your family fits this description, this may be a helpful tool for you to use as you navigate your transition from EI. If your family does not fit this description, you may still find this tool helpful, but keep in mind that some of the resources and suggestions might not be appropriate.</p>
+				<p></p>
+				<p>As you may already know, EI services are scheduled to end on your child's 3rd birthday. The transition from EI should begin 6 months prior to that date, but it's never too early to start thinking about life after EI and never too late to think about the child's services and supports after his or her 3rd birthday.</p>
+                <p></p>
+				<h3>The purpose of this tool is to accomplish four things:</h3>
+				<p></p>
+					<ul>
+						<li>To compare current services and supports with those in the future.</li>
+						<p></p>
+						<li>To identify areas where the child and your family might be lacking support and services in the future.</li>
+						<p></p>
+						<li>To provide you with information about resources you can contact to answer questions that you might have.</li>
+						<p></p>
+						<li>To give you suggestions about how to use the supports you currently have to assist you in creating a strong supportive network of care providers and community connections for the future.</li>
+					</ul>
+				<p></p>
+				<h3><em>How This Tool Works</em></h3>
+				<p>This tool is presented in a survey-style format. Once you have completed 6 sections of questions, you will be directed to a final page. This final page will include some suggestions about next steps you can take and contact information for resources that might be helpful.</p>
+				<p></p>
+				<p><small><strong>Please note:</strong> The results of your survey are not linked to your IP address or any other identifying information. Unless you willingly share your name, contact information, and the results you received, your information will remain confidential.</small></p>
+				<p></p>
+				<p><em>You have the option to print the "Results" section of this survey so that you can refer back to your original entries and the suggestions that were based on those entries.</em></p>
+				
+<!-- "Don't have time to use the tool? Skip to the "Results" section and get information about how to navigate your family's transition from EI."-->
 
-                <a href="#p1"  class="proceed btn btn-large btn-info">Proceed &raquo;</a>
+                <a href="#p1"  class="proceed btn btn-large btn-info">Proceed to the tool.&raquo;</a>
               </section>
               
-              <section class="non-printable" id="p1">
+              <section class="non-printable" id="homelife">
+			    <h2>Your Family Structure</h2>
+				<p></p>
+				<!-- necessary?
+				<p>There is tremendous amounts of love in many families, no matter the structure. We want to be sure to respect your family make-up, which is why we've included this section.</p>
+				<p></p>
+				<p>Please complete the following information so that we can tailor the language that we use and the resources we suggest to fit your family. For example, if you are the grandparent of the child in EI, we would like to refer to the child as your grandchild. Or, for example, if you are a single parent, it's not going to be too helpful if we refer to tasks that a second parent could take on.</p>
+				<p></p><-->
+				
+				<li><em>Please direct us in how we should refer to the child in EI. There is no right or wrong answer here; simply indicate the language you prefer we use.</em>
+<!--default should be "child"; ideally we will modify the rest of the survey to do a data switch when "your child" is referenced so that it would read, "your grandchild," if that option below was selected-->
+				  <ul>
+				    <li><input type="radio" name="your-child" value="your-child" />child</li>
+					<li><input type="radio" name="your-stepchild" value="your-stepson" />stepchild</li>
+					<li><input type="radio" name="your-grandchild" value="your-grandchild" />grandchild</li>
+					<li><input type="radio" name="your-niece" value="your-niece" />niece</li>
+					<li><input type="radio" name="your-nephew" value="your-nephew" />nephew</li>
+					<li>Other:<input type="text"/></li>
+<!-- Hey Mark, How can we use the value entered in the "other" field to appear later on in the text? And how can we change any time we refer to "your child" in the text below to change based on the above answers?-->
+				  </ul>
+				</li>
+				<p></p>
+				<li>
+				  <em>Is there a second primary caregiver that is regularly involved in the child's life who understands how the various therapies and interventions are supporting the child's development?</em>
+					<ul>
+					  <li><input type="radio" name="second-parent" value="yes"/>Yes.</li>
+					  <li><input type="radio" name="second-parent" value="no"/>No.</li>
+					</ul>
+				</li>
+<!-- If there is a second primary caregiver, there's gotta be a data switch in the community supports section -->
+				<p></p>
+				<li>
+				  <em>Are they any siblings or other children in the child's home environment? If the child moves between two or more households, please account for all the children in the child's various home environments.</em>
+				  <ul>
+					<li><input type="radio" name="siblings" value="yes" />Yes.</li>
+					<li><input type="radio" name="siblings" value="no" />No.</li>
+				  </ul>
+				 </li>
+			  
+			  <a href="#p1"  class="proceed btn btn-large btn-info">Continue. &raquo;</a>
+              </section>
+			  
+			  
+			  <section class="non-printable" id="p1">
                 <h2>Early Intervention</h2>
                 <ol>
                   <li>
-                    <em>Please use the table to indicate the services and supports you are receiving in EI, as well as the number of hours each week.</em>
+                    <h3><em>Please use the table to indicate the EI supports and services currently in place.</em></h3>
                     <table>
                       <tr>
-                        <th>Support/Service</th>
+                        <th>Service or Support</th>
                         <th>Hours per Week</th>
                       </tr>
                       <tr>
@@ -179,14 +234,14 @@
                       <li><input type="radio" name="satisfied-with-ei" value="no">No</li>
                     </ul>
                     <ul data-switch="satisfied-with-ei">
-                      <li class="yes">It's wonderful that you're so happy with your services in EI! It might be helpful to work with your service coordinator on identifying what about the amount and quality of services is satisfying for you. This could help you appraise providers in the future.</li>
+                      <li class="yes">It appears that you're currently satisfied with the amount and quality of the EI services and supports currently in place. It might be helpful to work with your Service Coordinator on identifying what about the amount and quality of services is satisfying for you. This could help you appraise providers in the future.</li>
                       <li class="no">
                         <ul>
-                          <li>Which is dissatisfying to you?
+                          <li>What is dissatisfying to you?
                             <ul>
-                              <li><input type="radio" name="dissatisfying" value="amount"/>The amount of my child's services.</li>
-                              <li><input type="radio" name="dissatisfying" value="quality"/>The quality of my child's services.</li>
-                              <li><input type="radio" name="dissatisfying" value="both"/>Both are dissatisfying.</li>
+                              <li><input type="radio" name="dissatisfying" value="amount"/>My child is not getting enough services.</li>
+                              <li><input type="radio" name="dissatisfying" value="quality"/>I am unsatisfied with the quality of my child's services.</li>
+                              <li><input type="radio" name="dissatisfying" value="both"/>My child is not getting enough services and the quality of the services that he or she is getting isn't satisfactory.</li>
                             </ul>
                             <ul data-switch="dissatisfying">
                               <li class="amount quality both">Have you used your health insurance benefits to secure therapies or services through a provider outside of the Early Intervention system?
@@ -194,10 +249,22 @@
                                   <li><input type="radio" name="dissatisfying-insurance" value="yes"/>Yes.</li>
                                   <li><input type="radio" name="dissatisfying-insurance" value="no"/>No.</li>
                                 </ul>
-                                <ul data-switch="dissatisfying-insurance">
-                                  <li class="yes"><p>If you've spoken with your service coordinator about your dissatisfaction with the services that your child is receiving and have also spoken with your service coordinator's supervisor, then it's likely that you have exhausted your options for your EI services. If you have identified and began to work with providers outside the EI system that you are satisfied with, then you are well on your way to building an effective team for your child once they have aged out of EI.</p>
-                                  </li>
-                                  <li class="no"><p>If you've spoken with your service coordinator about your dissatisfaction with your child's services, and have also spoken with your service coordionator's supervisor, then you might want to explore options to work with providers outside of the Early Intervention system. Identifying providers that accept your health insurance is among the first steps to building an effective care team that will help you sustain your child's outcomes once you transition out of Early Intervention.</p></li>  
+                                
+								<ul data-switch="dissatisfying-insurance">
+                                  
+								  <li class="yes"><p>When a family is not satisfied with services that a child is receiving in EI, the first person to address this with is the Service Coordinator. If you have spoken with the Service Coordinator with no results, then it might be a good idea to follow up with the Service Coordinator's supervisor. If you have already done this and your efforts were not fruitful, you could reach out to the director or assistant director of the EI program. However, it's likely that you've exhausted your options for improving your experience with EI.</p>
+								  <p></p>
+								  <p>It appears that you've used the child's health insurance benefits to access additional therapies and services outside the EI system. If you have begun to work with providers independently, then you are on your way to building an effective care team for the future.</p>
+								  <p></p>
+								  <p>The next step to building an effective care team is articulating what providers do effectively and where they can improve. Once you've established the latter, you can determine whether or not to keep a provider on the child's team.</p>
+								  </li>
+								  
+                                  <li class="no"><p>When a family is not satisfied with services that a child is receiving in EI, the first person to address this with is the child's Service Coordinator. If you have spoken with the Service Coordinator with no results, then it might be a good idea to follow up with the Service Coordinator's supervisor. If you have done this and your efforts were not fruitful, you could reach out to the director or assistant director of the EI program.</p>
+								  <p></p>
+								  <p>However, it's likely that you've exhausted your options for improving your experience with EI. It is now time to consider how the child's health insurance can help support his or her development.</p>
+								  <p></p>
+								  <p>The first step to building an effective care team outside of EI for your child is identifying providers that accept the child's health insurance. The second step is working with new providers and articulating what they do effectively and where they could improve. Once you've established the latter, you can determine whether or not to keep a provider on the child's team.</p>
+								  </li>  
                                 </ul>
                               </li>
                             </ul>
@@ -217,7 +284,7 @@
                     <ul data-switch="aba-services-afterei">
                       <li class="yes">
                         <p>Please edit the table above to reflect the number of hours of ABA that your child will receive.</p>
-                        <p>If you do not anticipate that your child will begin ABA more than six months before their third birthday, please leave the table blank and proceed as though you are not receiving ABA in Early Intervention by changing your answer to “no.”</p>
+                        <p>If you do not anticipate that your child will begin ABA more than six months before their 3rd birthday, please leave the table blank and proceed as though the child is not receiving ABA by changing your answer to “no.”</p>
 
                         <em>Does your health insurance cover ABA?</em>
 
@@ -226,16 +293,20 @@
                           <li><input type="radio" name="health-insurance-covers-aba" value="no">No</li>
                           <li><input type="radio" name="health-insurance-covers-aba" value="notsure">Not Sure</li>
                         </ul>
-                        <ul data-switch="health-insurance-covers-aba">
-                          <li class="yes">
-                            <p>It’s important to decide as soon as possible which ABA provider you would like to work with. You can discuss potential providers with your service coordinator or the specialist who focuses most on your child’s behavioral development (for some families this is a developmental pediatrician, while for others this might be a neurologist). Once you have identified potential providers, it is important to confirm that they will accept your health insurance and begin the process of securing services for your child. Some ABA providers have long wait times.</p>
+<!-- This is where the insurance survey would go. -->
+						<ul data-switch="health-insurance-covers-aba">
+                          
+						  <li class="yes">
+                            <p>It’s important to decide as soon as possible which ABA provider you would like to work with. You can discuss potential providers with your Service Coordinator or the specialist who focuses most on your child’s behavioral development (this might be a developmental pediatrician or neurologist). Once you have identified potential providers, it is important to confirm that they will accept your health insurance and begin the process of securing services for your child. Some ABA providers have long wait lists.</p>
                           </li>
-                          <li class="no">
-                            <p>If your health insurance does not cover ABA, there may be some options available to you. You can learn more about these options by contacting the Autism Insurance Resource Center at (781) 642-0248 or (800) 642-0249. You can explore their website <a href="https://www.disabilityinfo.org/arica/">here</a>.</p>
+                          
+						  <li class="no">
+                            <p>If your health insurance does not cover ABA, there may be some options available to you. You can learn more about these options by contacting the <a href="https://www.disabilityinfo.org/arica/">Autism Insurance Resource Center</a> at (781) 642-0248 or (800) 642-0249.</p>
                           </li>
-                          <li class="notsure">
-                            <p>To determine whether or not your health insurance covers ABA, you can contact the Autism Insurance Resource Center. If your health insurance does not cover ABA, there might be other options available. You can reach the Autism Insurance Resource Center at (781) 642-0248 or (800) 642-0249. You can explore their website <a href="https://www.disabilityinfo.org/arica/">here</a>.</p>
-                            <!-- This is where the insurance survey would go. -->
+                          
+						  <li class="notsure">
+                            <p>To determine whether or not your health insurance covers ABA, you can contact the Autism Insurance Resource Center. If your health insurance does not cover ABA, there might be other options available. You can reach the  <a href="https://www.disabilityinfo.org/arica/">Autism Insurance Resource Center</a> at (781) 642-0248 or (800) 642-0249.</p>
+                            
                           </li>
                         </ul>
                       </li>
@@ -251,10 +322,7 @@
                     </ul>
                     <ul data-switch="aba-services-continuing">
                       <li class="yes">
-                        <p>If your ABA services are scheduled to continue once your child ages out of 
-                          EI, then you are a hundred steps ahead of the game! You might want to discuss how 
-                          ABA might change with your service coordinator and the ABA clinician overseeing your child’s case.
-                        </p>
+                        <p>If your ABA services are scheduled to continue once your child ages out of EI, then you are a hundred steps ahead of the game! You might want to discuss how ABA might change with your Service Coordinator and the ABA clinician overseeing your child’s case.</p>
                       </li>
                       <li class="no">
                         <em>Are you interested in continuing with ABA services after EI?</em>
@@ -272,16 +340,16 @@
                               <li><input type="radio" name="health-insurance-covers-aba" value="no">No</li>
                               <li><input type="radio" name="health-insurance-covers-aba" value="notsure">Not Sure</li>
                             </ul>
+ <!-- This is where the insurance survey would go. -->
                             <ul data-switch="health-insurance-covers-aba">
                               <li class="yes">
-                                <p>It’s important to decide as soon as possible which ABA provider you would like to work with. You can discuss potential providers with your service coordinator or the specialist who focuses most on your child’s behavioral development (for some families this is a developmental pediatrician, while for others this might be a neurologist). Once you have identified potential providers, it is important to confirm that they will accept your health insurance and begin the process of securing services for your child. Some ABA providers have long wait times.</p>
+                                <p>It’s important to decide as soon as possible which ABA provider you would like to work with. You can discuss potential providers with your Service Coordinator or the specialist who focuses most on your child’s behavioral development (this would likely be either a developmental pediatrician or neurologist). Once you have identified potential providers, it is important to confirm that they will accept your health insurance and begin the process of securing services for your child. Some ABA providers have long wait lists.</p>
                               </li>
                               <li class="no">
-                                <p>If your health insurance does not cover ABA, there may be some options available to you. You can learn more about these options by contacting the Autism Insurance Resource Center at (781) 642-0248 or (800) 642-0249. You can explore their website <a href="https://www.disabilityinfo.org/arica/">here</a>.</p>
+                                <p>If your health insurance does not cover ABA, there may be some options available to you. You can learn more about these options by contacting the <a href="https://www.disabilityinfo.org/arica/">Autism Insurance Resource Center</a> at (781) 642-0248 or (800) 642-0249.</p>
                               </li>
                               <li class="notsure">
-                                <p>To determine whether or not your health insurance covers ABA, you can contact the Autism Insurance Resource Center. If your health insurance does not cover ABA, there might be other options available. You can reach the Autism Insurance Resource Center at (781) 642-0248 or (800) 642-0249. You can explore their website <a href="https://www.disabilityinfo.org/arica/">here</a>.</p>
-                                <!-- This is where the insurance survey would go. -->
+                                <p>To determine whether or not your health insurance covers ABA, you can contact the Autism Insurance Resource Center. If your health insurance does not cover ABA, there might be other options available. You can reach the <a href="https://www.disabilityinfo.org/arica/">Autism Insurance Resource Center</a> at (781) 642-0248 or (800) 642-0249.</p>
                               </li>
                             </ul>
                           </li>
@@ -291,8 +359,7 @@
                   </li>
                 </ol>
 
-                <a target="_blank" href="https://docs.google.com/forms/d/1iY-E5yIKwSSJPofKdJ2DrzAiC1U8bHJhxnNpqYe29wU/viewform">Provide feedback about this section.</a><br />
-                <a href="#p2" class="proceed btn btn-large btn-info">Continue &raquo;</a>
+              <a href="#p2" class="proceed btn btn-large btn-info">Continue &raquo;</a>
               </section>
 
               <section class="non-printable"  id="p2">
@@ -300,13 +367,12 @@
                 
                 <ol>
                   <li>
-                    <!-- <p>(Outside of EI and not including any services that may be included in your child’s IEP) Please fill out the following chart for the services your child currently receives and what (s)he will receive after EI ends. If your child receives a service on a biweekly basis you can enter .5 for hours per week, or .25 if you are seen once a month. Leave blank if you do not receive this service.
-                    (add in community stuff - community rec, parent to parent/support group)</p> -->
-                    <em>What additional supports and services are you receiving privately?</em>
+                    <h3><em>What additional supports and services are you receiving privately?</em></h3>
+					<p></p>
 					<p>If your child receives a service on a biweekly basis you can enter .5 for hours per week, or .25 if you are seen for one hour once a month.</p>
                     <table>
                       <tr>
-                        <th>Support/Service</th>
+                        <th>Service or Support</th>
                         <th>Hours per Week</th>
                       </tr>
                       <tr>
@@ -409,9 +475,10 @@
                     </ul>
                     <ul data-switch="change-after-ei">
                       <li class="yes">
+					  Please complete the table below with the amount of services that the child will receive after EI ends.
                         <table>
                           <tr>
-                            <th>Support/Service</th>
+                            <th>Service or Support</th>
                             <th>Hours per Week after EI ends</th>
                           </tr>
                           <tr>
@@ -510,19 +577,15 @@
                   </li>
                 </ol>
 
-                <a target="_blank" href="https://docs.google.com/forms/d/1iY-E5yIKwSSJPofKdJ2DrzAiC1U8bHJhxnNpqYe29wU/viewform">Provide feedback about this section.</a><br />
                 <a href="#p3" class="proceed btn btn-large btn-info">Continue &raquo;</a>
               </section>
 
               <section class="non-printable"  id="p3">
                 <h2>Specialists</h2>
                 <ol>
-                  <li><p><em>What specialists are on your child’s medical team?</em></p> 
+                  <li><h3><em>What specialists are on your child’s medical team?</em></h3> 
                    <p>This should include your child's providers outside of the Early Intervention system.</p>
                     <table id="medical-specialists">
-                    <tr>
-                      <th>Specialist</th>
-                    </tr>
                     <tr>
                       <td>
                         <input type="checkbox" id="specialist-pcp">
@@ -593,19 +656,15 @@
                </li>
              </ol>
 
-             <a target="_blank" href="https://docs.google.com/forms/d/1iY-E5yIKwSSJPofKdJ2DrzAiC1U8bHJhxnNpqYe29wU/viewform">Provide feedback about this section.</a><br />
              <a href="#p4" class="proceed btn btn-large btn-info">Continue &raquo;</a>
          </section>
 
               <section class="non-printable"  id="p4">
                   <h2>Social Supports</h2>
                   <ol>
-                    <li><em>What publicly funded or income-based supports and services are you receiving?</em>
+                    <li><h3><em>What publicly funded or income-based supports and services are you receiving?</em></h3>
 
                       <table id="social-supports">
-                        <tr>
-                          <th>Support</th>
-                        </tr>
                         <tr>
                           <td>
                             <input type="checkbox" id="support-wic">
@@ -639,26 +698,24 @@
 						<tr>
 						  <td>
 						    <input type="checkbox" id="support-cashassistance">
-							<label for="support-cashassistance">Cash Assistance from Dept of Transitional Assistance</label>
+							<label for="support-cashassistance">Cash Assistance from Dept of Transitional Assistance (DTA)</label>
 						  </td>
 						</tr>
 						<tr>
 						  <td>
 						    <input type="checkbox" id="support-ssi">
-							<label for="support-ssi">Social Security disability benefits</label>
+							<label for="support-ssi">Social Security disability benefits (SSI)</label>
 						  </td>
 						</tr>
                       </table>
                     </li>
                     <li>
-                      Do you expect the assistance with toys, books, clothing, etc. to end when your child transitions out of EI?
+                      Will the assistance with toys, books, clothing, etc end when EI ends?
                       <ul>
                         <li><input type="radio" name="ei-supports-ending" value="yes" />Yes</li>
                         <li><input type="radio" name="ei-supports-ending" value="no" />No</li>
                       </ul>
                       </ol>
-
-              <a target="_blank" href="https://docs.google.com/forms/d/1iY-E5yIKwSSJPofKdJ2DrzAiC1U8bHJhxnNpqYe29wU/viewform">Provide feedback about this section.</a><br />
               <a href="#p5" class="proceed btn btn-large btn-info">Continue &raquo;</a>
               </section>
 
@@ -666,11 +723,11 @@
               <section class="non-printable"  id="p5">
                   <h2>School Services</h2>
                   <ol>
-                    <li><em>What supports and services will your child receive in school?</em>
+                    <li><h3><em>What supports and services will your child receive in school?</em></h3>
 
                       <table>
                         <tr>
-                          <th>Support/Service</th>
+						  <th>Service or Support</th>	
                           <th>Hours per Week</th>
                         </tr>
                         <tr>
@@ -728,21 +785,16 @@
                       </li>
                       </ul>
                     </li></ol>
-
-              <a target="_blank" href="https://docs.google.com/forms/d/1iY-E5yIKwSSJPofKdJ2DrzAiC1U8bHJhxnNpqYe29wU/viewform">Provide feedback about this section.</a><br />
               <a href="#p6" class="proceed btn btn-large btn-info">Continue &raquo;</a>
               </section>
 
               <section class="non-printable"  id="p6">
-                    <h2>Community Supports</h2>
+                    <h2>Community-based Programs and Supports</h2>
 
                     <ol>
-                      <li><em>What community-based organizations, services, and supports are you and your family connected to?</em>
+                      <li><h3><em>What community-based organizations, services, and supports are you and your family connected to?</em></h3>
 
                         <table id="community-supports">
-                        <tr>
-                          <th>Support/Service</th>
-                        </tr>
                         <tr>
                           <td>
                             <input type="checkbox" id="community-support-group">
@@ -787,7 +839,7 @@
               
               <section class="printable" id="results">
               <h2>Results</h2>
-                <a class="non-printable" onclick="javascript:window.print();return false;" href="#">Print</a>
+                <a class="non-printable" onclick="javascript:window.print();return false;" href="#"><strong>Print these results.</strong></a>
 				<!-- Please add an "email the results" function.
                 <a onclick="javascript:function copyToClipboard (text) {
   window.prompt ('Copy to clipboard: Ctrl+C, Enter', text);
@@ -798,11 +850,12 @@
 
                   <table>
                     <tr>
-                      <th>Support/Service</th>
-                      <th>hrs/wk <small>currently</small></th>
-                      <th>hrs/wk <small>future (privately)</small></th>
-                      <th>hrs/wk future <small>(IEP)</small></th>
-                      <th>hrs/wk future</th>
+                      <th>Service or Support</th>
+<!-- we're going to have to review the layout below to make sure that it works well -->                   
+					  <th>hours per week <small>currently</small></th>
+                      <th>hours per week <small>future (privately)</small></th>
+                      <th>hours per week <small> future(IEP)</small></th>
+                      <th>hours per week future</th>
                     </tr>
                     <tr>
                       <td>
@@ -928,15 +981,9 @@
                     </ul>
 
                                             <ul data-switch="interested-continuing-aba">
-                          <li class="no"><p>It appears as though you 
-are not interested in obtaining ABA services for your child once they have aged 
-out of EI.</p> <p>Each parent and guardian knows what is best for his or her 
-own child. If you have decided against pursuing ABA therapy, it is important to 
-provide your child with as many other interventions as you are comfortable with. 
-That being said, you might want to revisit this decision with the specialists on your 
-child’s medical team in the future. While ABA might not feel like the best fit now, 
-perhaps there might come a time when it will be a welcomed intervention. Many healthcare professionals recommend that young children on the autism spectrum continue to receive ABA services in the home for numerous reasons. It might be helpful to hear what reasons might apply to your child. The best people to address this are the specialists you and your family are working with.</p>
-</li>
+                          <li class="no"><p>It appears as though you are not interested in obtaining ABA services for your child once they have aged out of EI.</p> 
+						  <p>Each parent and guardian knows what is best for his or her own child. If you have decided against pursuing ABA therapy, it is important to provide your child with as many other interventions as you are comfortable with. That being said, you might want to revisit this decision with the specialists on your child’s medical team in the future. While ABA might not feel like the best fit now, perhaps there might come a time when it will be a welcomed intervention. Many healthcare professionals recommend that young children on the autism spectrum continue to receive ABA services in the home for numerous reasons. It might be helpful to hear what reasons might apply to your child. The best people to address this are the specialists you and your family are working with.</p>
+						  </li>
                         </ul>
 
                     <ul data-switch="aba-services-afterei">
@@ -1023,6 +1070,8 @@ perhaps there might come a time when it will be a welcomed intervention. Many he
                     </div>
                   </li>
                   </ol>
+				  
+				<a class="non-printable" onclick="javascript:window.print();return false;" href="#"><strong>Print these results.</strong></a>
 
               <h4 class="non-printable"><a target="_blank" href="https://docs.google.com/forms/d/18yXDh7EMMRo7viiS9lumR0JJtaUUisUScPIm6IZ5fn8/viewform">Testers please proceed here.</a></h4>
               <hr class="col-md-12">
