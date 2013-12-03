@@ -1,10 +1,14 @@
-body { background: #F0F8FA; }
+body { 
+	background: #F0F8FA; 
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
 
 .container { max-width: 900px; background: #fff; }
 
 body > .container, body header > .container { 
   padding: 30px; padding-top: 15px; 
-  font-size: 16px; line-height: 24px; 
+  font-size: 14px; 
+  line-height: 19px; 
   border-radius: 6px; box-shadow: 0 0 10px #666; 
 }
 
@@ -46,7 +50,6 @@ header {
 }
 
 table { margin-top: 1em; }
-table td, table th { padding: .5em; }
 table td input[type="radio"], table td input[type="checkbox"] { margin: 4px; }
 td[data-total="current"], td[data-total="future"],
 td.current, td.future { font-size: 1.5em; }
@@ -71,3 +74,8 @@ ul[data-aggregate] { list-style-type: disc; padding-bottom: 1em; }
 ul[data-aggregate] li { margin: 0 0 0 2em; padding: 0; }
  
 header p, #intro p { margin: 0 0 15px;}
+
+.feedback {
+	background-color: lightgray;
+	font-style: italic;
+}
