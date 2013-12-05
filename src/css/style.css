@@ -49,8 +49,8 @@ header {
    position:static;
 }
 
-table { margin-top: 1em; }
-table td input[type="radio"], table td input[type="checkbox"] { margin: 4px; }
+table { margin-top: 2em; }
+table td input[type="radio"], table td input[type="checkbox"] { margin: 6px; }
 td[data-total="current"], td[data-total="future"],
 td.current, td.future { font-size: 1.5em; }
 
@@ -79,3 +79,4 @@ header p, #intro p { margin: 0 0 15px;}
 	background-color: lightgray;
 	font-style: italic;
 }
+
