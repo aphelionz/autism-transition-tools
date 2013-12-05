@@ -1,8 +1,17 @@
 body { 
-	background: #f0f8fa; 
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
+  background: #f0f8fa; 
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
   color: #212b40;
   /* color: #42577f; */ ;
+}
+a.list-group-item { 
+  background-color: #f0f8fa;
+  color: #212b40; 
+}
+
+a.feedback {
+	background-color: #ccddff;
+  font-style: italic;
 }
 
 h1, h2, h3, h4, h5 { color: #42577f; }
@@ -19,12 +28,13 @@ h1, h2, h3, h4, h5 { color: #42577f; }
 .container { max-width: 900px; background: #fff; }
 
 body > .container, body header > .container { 
-  padding: 15px 30px; 
+  padding: 15px 65px 15px 30px; 
   font-size: 14px; 
   line-height: 19px; 
   border-radius: 6px; 
   box-shadow: 0 0 10px #666; 
 }
+body header > .container { padding: 15px 30px; }
 
 body header > .container { width: 600px; margin: 50px auto; }
 body header h4 { font-weight: bold; padding-bottom: 1em; }
@@ -46,17 +56,17 @@ section { border: 0; margin-bottom: 100%; }
 /* bootstrap 3 helpers */
 
 .navbar-form input, .form-inline input {
-	width:auto;
+  width:auto;
 }
 
 header {
-	height:270px;
+  height:270px;
 }
 
 @media (min-width: 979px) {
   #sidebar.affix-top {
     position: static;
-  	margin-top:25px;
+    margin-top:25px;
   }
   
   #sidebar.affix {
@@ -70,7 +80,9 @@ header {
    position:static;
 }
 
-table { margin-top: 2em; }
+table { margin-top: 2em; width: 80%; }
+table th { font-size: 1.2em; padding: 0 0 .75em 0; }
+table td { padding: .25em 0; }
 table td input[type="radio"], table td input[type="checkbox"] { margin: 6px; }
 td[data-total="current"], td[data-total="future"],
 td.current, td.future { font-size: 1.5em; }
@@ -81,11 +93,14 @@ ul[data-switch] > li { display: none; }
 
 .text-results > p { display: none; }
 
+.print-only { display: none;}
+
 @media print 
 {
   .non-printable { display: none; }
   .printable { display: block; }
-
+  .print-only { display: block;}
+  
   .printable h2 { margin: 0; padding: 0; }
 }
 
@@ -96,8 +111,6 @@ ul[data-aggregate] li { margin: 0 0 0 2em; padding: 0; }
  
 header p, #intro p { margin: 0 0 15px;}
 
-.feedback {
-	background-color: lightgray;
-	font-style: italic;
-}
-
+ul.choices { margin-left: 1em; }
+ul.choices li { margin: 0; padding: 0; }
+ul.choices.inline li { display: inline; padding: 0 .5em 0 0; }
