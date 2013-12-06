@@ -205,7 +205,7 @@
                             </ul>
                             <ul data-switch="dissatisfying">
                               <li class="amount quality both">Have you used your health insurance benefits to access therapies or services through a provider outside of the EI system?
-                                <ul>
+                                <ul class="choices inline">
                                   <li><input type="radio" name="dissatisfying-insurance" value="yes"/>Yes.</li>
                                   <li><input type="radio" name="dissatisfying-insurance" value="no"/>No.</li>
                                 </ul>
@@ -378,90 +378,76 @@
                       </tr>
                       <tr>
                         <td>
-                          <input type="checkbox" id="additional-family">
-                          <label for="additional-family">Family Therapist</label>
+                           <label for="additional-family">Family Therapist</label>
                         </td>
                         <td>
-                          <input type="number" min="0" value="0" data-activate="additional-family" name="additional-family-hours" id="additional-family-hours" disabled />
+                          <input type="number" min="0" value="0" name="additional-family-hours" id="additional-family-hours" />
                         </td>
                       </tr>
                       <tr>
                         <td>
-                          <input type="checkbox" id="additional-ot">
                           <label for="additional-ot">Occupational Therapy (OT)</label>
                         </td>
                         <td>
-                          <input type="number" min="0" value="0" data-activate="additional-ot" name="additional-ot-hours" id="additional-ot-hours" disabled />
+                          <input type="number" min="0" value="0" name="additional-ot-hours" id="additional-ot-hours" />
                         </td>
                       </tr>
                       <tr>
                         <td>
-                          <input type="checkbox" id="additional-pt">
                           <label for="additional-pt">Physical Therapy (PT)</label>
                         </td>
                         <td>
-                          <input type="number" min="0" value="0" data-activate="additional-pt" name="additional-pt-hours" id="additional-pt-hours" disabled />
+                          <input type="number" min="0" value="0" name="additional-pt-hours" id="additional-pt-hours" />
                         </td>
                       </tr>
                       <tr>
                         <td>
-                          <input type="checkbox" id="additional-social">
+                          
                           <label for="additional-social">Social Skills Group or Play Group</label>
                         </td>
                         <td>
-                          <input type="number" min="0" value="0" data-activate="additional-social" name="additional-social-hours" id="additional-social-hours" disabled />
+                          <input type="number" min="0" value="0"  name="additional-social-hours" id="additional-social-hours" />
                         </td>
                       </tr>
                       <tr>
                         <td>
-                          <input type="checkbox" id="additional-therapist">
                           <label for="additional-therapist">Therapist</label>
                         </td>
                         <td>
-                          <input type="number" min="0" value="0" data-activate="additional-therapist" name="additional-therapist-hours" id="additional-therapist-hours" disabled />
+                          <input type="number" min="0" value="0" data-activate="additional-therapist" name="additional-therapist-hours" id="additional-therapist-hours" />
                         </td>
                       </tr>
                       <tr>
                         <td>
-                          <input type="checkbox" id="additional-case-worker">
                           <label for="additional-case-worker">Case Worker</label>
                         </td>
                         <td>
-                          <input type="number" min="0" value="0" data-activate="additional-case-worker" name="ei-case-worker-hours" id="ei-case-worker-hours" disabled />
+                          <input type="number" min="0" value="0" data-activate="additional-case-worker" name="ei-case-worker-hours" id="ei-case-worker-hours" />
                         </td>
+                      </tr>
                       </tr>
                       <tr>
                         <td>
-                          <input type="checkbox" id="additional-educational-advocate">
-                          <label for="additional-educational-advocate">Educatonal Advocate</label>
-                        </td>
-                        <td>
-                          <input type="number" min="0" value="0" data-activate="additional-educational-advocate" name="additional-educational-advocate" id="additional-educational-advocate-hours" disabled />
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <input type="checkbox" id="additional-care-coordinator">
+                          
                           <label for="additional-care-coordinator">Care Coordinator</label>
                         </td>
                         <td>
-                          <input type="number" min="0" value="0" data-activate="additional-care-coordinator" name="additional-care-coordinator-hours" id="additional-care-coordinator-hours" disabled />
+                          <input type="number" min="0" value="0" data-activate="additional-care-coordinator" name="additional-care-coordinator-hours" id="additional-care-coordinator-hours" />
                         </td>
                       </tr>
                       <tr>
                         <td>
-                          <input type="checkbox" id="additional-other">
                           <label for="additional-other">Other</label>
                         </td>
                         <td>
-                          <input type="number" min="0" value="0" data-activate="additional-other" name="additional-other-hours" id="additional-other-hours" disabled />
+                          <input type="number" min="0" value="0" data-activate="additional-other" name="additional-other-hours" id="additional-other-hours"/>
                         </td>
                       </tr>
                     </table>
                   </li>
 
                   <li>Will any of these change after Early Intervention ends?
-                    <ul>
+                    <ul class="choices inline">
                       <li><input type="radio" name="change-after-ei" value="yes" />Yes</li>
                       <li><input type="radio" name="change-after-ei" value="no" />No</li>
                     </ul>
@@ -640,6 +626,12 @@
                        <label for="specialist-bcba">Board Certified Behavior Analyst (BCBA)</label>
                      </td>
                     </tr>
+					<tr>
+					  <td>
+						<input type="checkbox" id="education-advocate">
+						<label for="education-advocate">Special Education Advocate</label>
+					  </td>
+					</tr>
                     <tr>
                       <td>
                         <input type="checkbox" id="specialist-play-therapist">
@@ -711,7 +703,7 @@
                     </li>
                     <li>
                       <em>Will the assistance with toys, books, clothing, etc end when EI ends?</em>
-                      <ul>
+                      <ul class="choices inline">
                         <li><input type="radio" name="ei-supports-ending" value="yes" />Yes</li>
                         <li><input type="radio" name="ei-supports-ending" value="no" />No</li>
                       </ul>
@@ -735,11 +727,10 @@
                         </tr>
                         <tr>
                           <td>
-                            <input type="checkbox" id="school-speech-therapy">
                             <label for="school-speech-therapy">Speech Therapy</label>
                           </td>
                           <td>
-                            <input type="number" min="0" max="5" step="0.25" value="0" data-activate="school-speech-therapy" name="school-speech-therapy-hours" id="school-speech-therapy-hours" disabled />
+                            <input type="number" min="0" max="5" step="0.25" value="0" data-activate="school-speech-therapy" name="school-speech-therapy-hours" id="school-speech-therapy-hours" />
                           </td>
                         </tr>
                         <tr>
@@ -1020,7 +1011,7 @@
                   </li>
 
                   <li>
-                    <h3>Medical Specialists</h3>
+                    <h3>Specialists</h3>
 
                     <p>It appears that the following providers will make up your child’s care team once you leave Early Intervention.</p>
 
