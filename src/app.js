@@ -2,6 +2,9 @@ $(document).ready(function() {
     getTotals();
 
     $("input").on("change", function(e) {
+      $("#noclick-results").hide();
+      $("#results").show();
+
       getTotals();
     });
 
