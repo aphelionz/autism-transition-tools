@@ -373,7 +373,7 @@
                           <label for="additional-aba">Applied Behavioral Analysis (ABA)</label>
                         </td>
                         <td>
-                          <input type="number" min="0" value="0" name="additional-aba-hours" id="additional-aba-hours" />
+                          <input type="number" min="0" step=".5" value="0" name="additional-aba-hours" id="additional-aba-hours" />
                         </td>
                       </tr>
                       <tr>
@@ -462,17 +462,18 @@
                     <ul data-switch="change-after-ei">
                       <li class="yes">
             <em>Please adjust the table below to reflect the amount of services that your child will receive after EI ends.</em>
-                        <table>
+                        <table style="width: 90%;">
                           <tr>
                             <th>Service or Support</th>
                             <th>Hours per Week after EI ends</th>
                           </tr>
                           <tr>
                             <td>
+                              <input type="checkbox" id="afterei-aba">
                               <label for="afterei-aba">Applied Behavioral Analysis (ABA)</label>
                             </td>
                             <td>
-                              <input type="number" min="0" value="0" data-activate="afterei-aba" name="afterei-aba-hours" id="afterei-aba-hours" disabled />
+                              <input type="number" min="0" step=".5" value="0" data-activate="afterei-aba" name="afterei-aba-hours" id="afterei-aba-hours" disabled />
                             </td>
                           </tr>
                           <tr>
@@ -896,9 +897,9 @@
                       <td>
                         <label for="results-ei-aba">Applied Behavioral Analysis (ABA)</label>
                       </td>
-                      <td class="current aba" data-sum="ei-aba-hours"></td>
-                      <td></td>
-                      <td class="iep"></td>
+                      <td class="current aba" data-sum="ei-aba-hours+additional-aba-hours"></td>
+                      <td data-sum="afterei-aba-hours"></td>
+                      <td class="iep">-</td>
                       <td class="future aba" data-hour-total></td>
                     </tr>
                     <tr>
