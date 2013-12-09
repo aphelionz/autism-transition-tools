@@ -9,6 +9,9 @@ $(document).ready(function() {
       if($(this).val() > 0) {
         $(".no-aba-hours").hide();
         $(".aba-hours-entered").show();
+      } else {
+        $(".no-aba-hours").show();
+        $(".aba-hours-entered").hide();
       }
     });
 
