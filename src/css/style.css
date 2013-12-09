@@ -91,7 +91,6 @@ h2 { padding-top: 1em; }
 
 ul[data-switch] > li { display: none; }
 
-#results { display: none; }
 .text-results > p { display: none; }
 
 .print-only { display: none;}
@@ -103,8 +102,6 @@ ul[data-switch] > li { display: none; }
   .print-only { display: block;}
   
   .printable h2 { margin: 0; padding: 0; }
-  #results { display: none; }
-  #results.shown { display: block; }
 }
 
 .aba-hours-entered { display: none; }
