@@ -2,6 +2,10 @@ $(document).ready(function() {
     getTotals();
     
     $("input").on("change", function(e) {
+      $('a[href="#noclick-results"]').attr("href","#results");
+      $("#noclick-results").hide();
+      $("#results").show();
+
       getTotals();
     });
 
