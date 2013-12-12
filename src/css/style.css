@@ -116,3 +116,5 @@ ul.choices li { margin: 0; padding: 0; }
 ul.choices.inline li { display: inline; padding: 0 .5em 0 0; }
 
 ol li { margin-top: 1em; }
+
+.results p { margin: 1.5em 0; }
