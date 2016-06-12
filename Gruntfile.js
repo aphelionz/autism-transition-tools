@@ -13,6 +13,7 @@ module.exports = function(grunt) {
   });
 
   grunt.loadNpmTasks('grunt-bower-concat');
+  grunt.loadNpmTasks('grunt-bower');
 
   grunt.registerTask('default', ['bower']);
 };

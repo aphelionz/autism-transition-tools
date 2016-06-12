@@ -10,7 +10,8 @@
   "author": "",
   "license": "BSD",
   "dependencies": {
-    "grunt": "~0.4.1"
+    "grunt": "~0.4.1",
+    "grunt-bower": "^0.21.2"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
